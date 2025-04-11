@@ -1,0 +1,228 @@
+@tailwind base;
+
+@layer base {
+  *,
+  *::before,
+  *::after,
+  ::backdrop,
+  ::file-selector-button {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant Garamond", "Roboto", "Fredoka", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root {
+    --color-blue: #123b97;
+    --color-purple: #b10990;
+    --color-purplelight: #9a0a7d1a;
+    --color-text: #0d000bb2;
+  }
+}
+@tailwind components;
+
+header {
+  background: linear-gradient(to right, #fef4fc 50%, var(--color-blue) 50%);
+}
+
+.nav-link {
+  @apply font-secondary text-base capitalize;
+}
+.heading-1 {
+  @apply lg:text-4xl sm:text-[2rem] mobilelg:text-[1.7rem] text-[1.5rem] font-bold leading-tight text-[var(--color-text)] font-secondary;
+}
+.achievement-card {
+  @apply flex justify-center flex-col items-center;
+}
+.achievement-number {
+  @apply text-3xl font-tertiary font-semibold;
+}
+.achievement-text {
+  @apply font-primary text-[1.1rem] text-center;
+}
+
+.img-split {
+  @apply w-40  rounded-[80px] transform bg-no-repeat bg-cover;
+}
+
+.card {
+  @apply flex flex-col justify-evenly rounded-lg shadow-lg lg:p-10 p-6 lg:w-[28%] tabletmd:w-[32%] sm:w-[45%] mobilelg:w-[47%] w-full h-[350px] bg-cover overflow-hidden bg-no-repeat bg-center transition duration-500 ease-in-out hover:scale-105;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.card-title {
+  @apply text-white text-3xl font-secondary font-semibold;
+}
+.card-text {
+  @apply text-white text-2xl/5 font-medium;
+}
+
+.card-btn {
+  @apply lg:w-7/12 w-9/12 inline-block mt-8 px-6 py-3 border-2 border-white text-[var(--color-blue)] hover:bg-transparent hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-primary font-bold text-center bg-white h-12 mobilexs:text-base text-sm;
+}
+
+.cta-btn {
+  @apply px-6 py-3 ring-1 ring-white hover:ring-0 text-white hover:bg-[var(--color-purple)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 min-w-36 text-center mobilexs:text-base text-sm;
+}
+
+.primary-button {
+  @apply px-6 py-3 text-white bg-[var(--color-blue)] hover:bg-[var(--color-purple)] transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary h-12 text-center mobilexs:text-base text-sm;
+}
+.ghost-button {
+  @apply px-6 py-3 border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-[var(--color-blue)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 text-center;
+}
+@tailwind utilities;
+.card:nth-child(1) {
+  background-image: url("/assets/images/touching-bg.png");
+}
+
+.card:nth-child(2) {
+  background-image: url("/assets/images/making-bg.png");
+}
+
+.card:nth-child(3) {
+  background-image: url("/assets/images/spreading-bg.png");
+}
+
+/* Add a transition to the menu to smoothly animate its entrance */
+menu {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Define the animation for the menu's entrance */
+.animate-entrance {
+  animation: entrance 0.5s forwards;
+}
+.animate-exit {
+  animation: exit 0.5s forwards;
+}
+
+/* Add a circular animation to the menu's entrance */
+.animate-entrance::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: circle 0.5s forwards;
+}
+/* Add a circular animation to the menu's exit */
+.animate-exit::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: circle-exit 0.5s forwards;
+}
+
+#achievement {
+  background-image: url("/assets/images/achievement-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#aboutSection {
+  background-image: url("/assets/images/about-bg.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+}
+
+#support {
+  background-image: url("/assets/images/support-blue-bg.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: var(--color-blue);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+#ctaSection {
+  background-image: url("/assets/images/achievement-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+@keyframes entrance {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes exit {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes circle-exit {
+  0% {
+    transform: translate(50%, 50%) scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) scale(0);
+    opacity: 1;
+  }
+}
+
+/* .img-split {
+  background-image: url("/assets/images/about-split.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+} */
+
+/* .img-split:nth-child(1) {
+  height: 300px;
+  background-position: 0px 0px;
+}
+.img-split:nth-child(2) {
+  height: 500px;
+  background-position: -250px 0px;
+}
+.img-split:nth-child(3) {
+  height: 350px;
+  background-position: -450px 0px;
+} */
