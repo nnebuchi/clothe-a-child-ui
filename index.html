@@ -22,7 +22,7 @@
       id="navbar"
       class="fixed top-0 left-0 w-full z-50 transition-all duration-300 p-4">
       <div
-        class="container mx-auto flex justify-between items-center sm:h-28 h-24">
+        class="container mx-auto flex justify-between items-center sm:h-24 h-20">
         <!-- Logo -->
         <a href="#" class="text-2xl font-bold" aria-label="Home" role="button">
           <img
@@ -35,24 +35,34 @@
         <!-- Navigation Menu -->
         <nav>
           <ul id="navMenu" class="tabletlg:flex hidden space-x-6">
-            <li><a href="#" class="nav-link" aria-label="Home">Home</a></li>
             <li>
-              <a href="#" class="nav-link" aria-label="Who we are"
+              <a href="index.html" class="nav-link" aria-label="Home">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link" aria-label="Who we are"
                 >Who we are</a
               >
             </li>
             <li>
-              <a href="#" class="nav-link" aria-label="Our projects"
+              <a href="projects.html" class="nav-link" aria-label="Our projects"
                 >Our projects</a
               >
             </li>
             <li>
-              <a href="#" class="nav-link" aria-label="Get involved"
+              <a href="involved.html" class="nav-link" aria-label="Get involved"
                 >Get involved</a
               >
             </li>
-            <li><a href="#" class="nav-link" aria-label="Donate">Donate</a></li>
-            <li><a href="#" class="nav-link" aria-label="Events">Events</a></li>
+            <li>
+              <a href="donate.html" class="nav-link" aria-label="Donate"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a href="events.html" class="nav-link" aria-label="Events"
+                >Events</a
+              >
+            </li>
           </ul>
           <button
             id="menuBtn"
@@ -72,31 +82,43 @@
             </button>
 
             <ul id="navMenu" class="flex flex-col justify-evenly h-full">
-              <li><a href="#" class="nav-link" aria-label="Home">Home</a></li>
               <li>
-                <a href="#" class="nav-link" aria-label="Who we are"
+                <a href="index.html" class="nav-link" aria-label="Home">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="nav-link" aria-label="Who we are"
                   >Who we are</a
                 >
               </li>
               <li>
-                <a href="#" class="nav-link" aria-label="Our projects"
+                <a
+                  href="projects.html"
+                  class="nav-link"
+                  aria-label="Our projects"
                   >Our projects</a
                 >
               </li>
               <li>
-                <a href="#" class="nav-link" aria-label="Get involved"
+                <a
+                  href="involved.html"
+                  class="nav-link"
+                  aria-label="Get involved"
                   >Get involved</a
                 >
               </li>
               <li>
-                <a href="#" class="nav-link" aria-label="Donate">Donate</a>
+                <a href="donate.html" class="nav-link" aria-label="Donate"
+                  >Donate</a
+                >
               </li>
               <li>
-                <a href="#" class="nav-link" aria-label="Events">Events</a>
+                <a href="events.html" class="nav-link" aria-label="Events"
+                  >Events</a
+                >
               </li>
               <a
                 role="button"
-                href="#"
+                href="donate.html"
                 class="primary-button sm:w-6/12 mobilemd:w-8/12 w-8/12"
                 aria-label="Donate Now ">
                 Donate Now
@@ -108,7 +130,7 @@
         <!-- CTA Button -->
         <a
           role="button"
-          href="#"
+          href="donate.html"
           class="cta-btn sm:flex hidden"
           aria-label="Donate Now ">
           Donate Now
@@ -119,24 +141,23 @@
     <!-- Hero Section -->
 
     <section id="hero" class="" aria-labelledby="hero-title">
-      <div
-        class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc] sm:pt-12 pt-4">
+      <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
         <!-- Left Side -->
         <div
           id="heroLeft"
-          class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-8 lg:pt-36 sm:pt-44 pt-36 pb-12">
+          class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-44 pt-36 pb-12">
           <h1
             id="hero-title"
             class="mobilelg:text-5xl text-4xl font-bold leading-tight tabletlg:w-10/12 md:w-8/12 mobilelg:w-10/12 w-full">
             Wrap a Child in Love and Hope.
           </h1>
           <p
-            class="mt-4 text-2xl text-gray-600 tabletmd:w-full md:w-8/12 mobilelg:w-10/12 w-full">
+            class="text-2xl text-gray-600 tabletmd:w-full md:w-8/12 mobilelg:w-10/12 w-full">
             Every child deserves warmth, dignity, and a chance to thrive. Join
             us in spreading love through clothing and changing lives worldwide.
           </p>
           <!-- Buttons -->
-          <div class="mt-6 flex space-x-2 items-center">
+          <div class="my-4 flex space-x-2 items-center">
             <a
               href="#"
               role="button"
@@ -209,7 +230,7 @@
 
       <!-- Achievement Cards Container -->
       <div
-        class="flex tabletlg:justify-between sm:justify-center mobilelg:justify-between justify-center items-center min-h-[250px] py-8 tabletlg:px-8 px-4 tabletlg:space-x-3 text-white tabletlg:flex-nowrap flex-wrap md:gap-0 mobilelg:gap-4 gap-y-8">
+        class="flex tabletlg:justify-between sm:justify-center mobilelg:justify-between justify-center items-center min-h-[200px] py-8 tabletlg:px-8 px-4 tabletlg:space-x-3 text-white tabletlg:flex-nowrap flex-wrap md:gap-0 mobilelg:gap-4 gap-y-8">
         <!-- Achievement Item 1 -->
         <div
           class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
@@ -448,6 +469,7 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
   <footer>
     <section class="footer bg-purplelight" id="footer" aria-labelledby="">

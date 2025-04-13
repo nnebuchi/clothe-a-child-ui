@@ -66,19 +66,20 @@ header {
 }
 
 .card-btn {
-  @apply lg:w-7/12 w-9/12 inline-block mt-8 px-6 py-3 border-2 border-white text-[var(--color-blue)] hover:bg-transparent hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-primary font-bold text-center bg-white h-12 mobilexs:text-base text-sm;
+  @apply lg:w-7/12 w-9/12 flex justify-center items-center mt-8 px-6 py-3 border-2 border-white text-[var(--color-blue)] hover:bg-transparent hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-primary font-bold text-center   bg-white h-12 mobilexs:text-lg text-sm;
 }
 
 .cta-btn {
-  @apply px-6 py-3 ring-1 ring-white hover:ring-0 text-white hover:bg-[var(--color-purple)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 min-w-36 text-center mobilexs:text-base text-sm;
+  @apply px-6 py-3 ring-1 ring-white hover:ring-0 text-white hover:bg-[var(--color-purple)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 min-w-36 text-center mobilexs:text-lg text-sm flex items-center justify-center;
 }
 
 .primary-button {
-  @apply px-6 py-3 text-white bg-[var(--color-blue)] hover:bg-[var(--color-purple)] transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary h-12 text-center mobilexs:text-base text-sm;
+  @apply px-6 py-3 text-white bg-[var(--color-blue)] hover:bg-[var(--color-purple)] transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary h-12 text-center mobilexs:text-lg text-sm flex items-center justify-center;
 }
 .ghost-button {
-  @apply px-6 py-3 border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-[var(--color-blue)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 text-center;
+  @apply px-6 py-3 border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-[var(--color-blue)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 text-center flex items-center justify-center mobilexs:text-lg text-sm;
 }
+
 @tailwind utilities;
 .card:nth-child(1) {
   background-image: url("/assets/images/touching-bg.png");
@@ -148,10 +149,10 @@ menu {
 }
 
 #support {
-  background-image: url("/assets/images/support-blue-bg.png");
+  background-image: url("/assets/images/bg-spiral.png");
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: var(--color-blue);
+  /* background-color: var(--color-blue); */
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -162,6 +163,33 @@ menu {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 300px;
+}
+#donationTitle {
+  background-image: url("/assets/images/about-bg.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+
+  /* min-height: 700px; */
+}
+.donation-card {
+  /* width: 32%; */
+  background-image: url("/assets/images/donate/donation-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.quote {
+  background-image: url("/assets/images/quote-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-purple);
+  background-blend-mode: overlay;
+  opacity: 1;
 }
 
 @keyframes entrance {

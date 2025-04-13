@@ -50,24 +50,24 @@ const closeBtn = document.getElementById("closeBtn");
 // Add an event listener to the menu button to toggle the menu's visibility
 menuBtn.addEventListener("click", () => {
   if (
-    menu.classList.contains("animate-exit") ||
-    menu.classList.contains("hidden")
+    menu.classList?.contains("animate-exit") ||
+    menu.classList?.contains("hidden")
   ) {
-    menu.classList.remove("animate-exit");
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("animate-entrance");
+    menu.classList?.remove("animate-exit");
+    menu.classList?.toggle("hidden");
+    menu.classList?.toggle("animate-entrance");
   } else {
-    menu.classList.toggle("hidden");
+    menu.classList?.toggle("hidden");
   }
 });
 
 // Add an event listener to the close button to toggle the menu's visibility
 closeBtn.addEventListener("click", () => {
-  if (menu.classList.contains("animate-entrance")) {
-    menu.classList.remove("animate-entrance");
-    menu.classList.toggle("animate-exit");
-    menu.classList.toggle("hidden");
+  if (menu.classList?.contains("animate-entrance")) {
+    menu.classList?.remove("animate-entrance");
+    menu.classList?.toggle("animate-exit");
+    menu.classList?.toggle("hidden");
   } else {
-    menu.classList.toggle("hidden");
+    menu.classList?.toggle("hidden");
   }
 });
