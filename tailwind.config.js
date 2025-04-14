@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}", "./index.html", "donate.html"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./index.html",
+    "donate.html",
+    "projects.html",
+    "events.html",
+  ],
   theme: {
     extend: {
       screens: {

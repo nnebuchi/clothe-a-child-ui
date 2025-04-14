@@ -71,3 +71,114 @@ closeBtn.addEventListener("click", () => {
     menu.classList?.toggle("hidden");
   }
 });
+
+// Tab functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const tabList = document.querySelectorAll('[role="tab"]');
+
+  tabList.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const parentUl = tab.closest("ul");
+      const activeClasses =
+        parentUl.dataset.tabsActiveClasses?.split(" ") || [];
+      const inactiveClasses =
+        parentUl.dataset.tabsInactiveClasses?.split(" ") || [];
+
+      // Clear all tabs
+      parentUl.querySelectorAll('[role="tab"]').forEach((t) => {
+        t.setAttribute("aria-selected", "false");
+        t.classList.remove(...activeClasses);
+        t.classList.add(...inactiveClasses);
+      });
+
+      // Hide all tab panels
+      const tabContentContainer = document.querySelector(
+        parentUl.dataset.tabsToggle
+      );
+      tabContentContainer
+        .querySelectorAll('[role="tabpanel"]')
+        .forEach((panel) => {
+          panel.classList.add("hidden");
+        });
+
+      // Activate clicked tab
+      tab.setAttribute("aria-selected", "true");
+      tab.classList.remove(...inactiveClasses);
+      tab.classList.add(...activeClasses);
+
+      // Show corresponding panel
+      const targetPanel = document.querySelector(tab.dataset.tabsTarget);
+      targetPanel.classList.remove("hidden");
+    });
+  });
+});
+
+// slider
+const images = [
+  {
+    src: "../assets/images/support-christmat.png",
+    alt: "Kids playing outdoors",
+  },
+  {
+    src: "../assets/images/support-christmat.png",
+    alt: "Kids smiling during play",
+  },
+  {
+    src: "../assets/images/support-christmat.png",
+    alt: "Girl at birthday party with hands up",
+  },
+  {
+    src: "../assets/images/support-christmat.png",
+    alt: "Child with raised hands enjoying a game",
+  },
+  {
+    src: "../assets/images/support-christmat.png",
+    alt: "Another happy moment",
+  },
+];
+let currentIndex = 2; // Start from center slide
+const carousel = document.getElementById("carousel");
+
+function renderSlides() {
+  carousel.innerHTML = ""; // Clear carousel
+
+  for (let i = 0; i < images.length; i++) {
+    let classNames =
+      "transition-all duration-500 ease-in-out rounded-xl overflow-hidden object-cover flex-shrink-0 w-[60%] sm:w-[40%] md:w-[30%]";
+
+    if (i === currentIndex) {
+      classNames += " scale-105 z-30";
+    } else if (i === currentIndex - 1 || i === currentIndex + 1) {
+      classNames += " scale-95 opacity-70 z-20";
+    } else {
+      classNames += " hidden sm:block opacity-40 scale-90 z-10";
+    }
+
+    carousel.innerHTML += `
+          <li class="${classNames}" role="group" aria-label="Slide ${
+      i + 1
+    } of ${images.length}">
+            <img src="${images[i].src}" alt="${
+      images[i].alt
+    }" class="w-full h-full object-cover" />
+          </li>
+        `;
+  }
+}
+
+function moveSlide(direction) {
+  const total = images.length;
+  currentIndex = (currentIndex + direction + total) % total;
+  renderSlides();
+}
+
+document.getElementById("prev").addEventListener("click", () => moveSlide(-1));
+document.getElementById("next").addEventListener("click", () => moveSlide(1));
+
+// Optional: keyboard support
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") moveSlide(1);
+  if (e.key === "ArrowLeft") moveSlide(-1);
+});
+
+renderSlides();

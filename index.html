@@ -15,6 +15,12 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="./src/script.js"></script>
   </head>
   <body class="bg-gray-100">
@@ -137,401 +143,408 @@
         </a>
       </div>
     </header>
+    <main>
+      <!-- Hero Section -->
 
-    <!-- Hero Section -->
-
-    <section id="hero" class="" aria-labelledby="hero-title">
-      <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
-        <!-- Left Side -->
-        <div
-          id="heroLeft"
-          class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-44 pt-36 pb-12">
-          <h1
-            id="hero-title"
-            class="mobilelg:text-5xl text-4xl font-bold leading-tight tabletlg:w-10/12 md:w-8/12 mobilelg:w-10/12 w-full">
-            Wrap a Child in Love and Hope.
-          </h1>
-          <p
-            class="text-2xl text-gray-600 tabletmd:w-full md:w-8/12 mobilelg:w-10/12 w-full">
-            Every child deserves warmth, dignity, and a chance to thrive. Join
-            us in spreading love through clothing and changing lives worldwide.
-          </p>
-          <!-- Buttons -->
-          <div class="my-4 flex space-x-2 items-center">
-            <a
-              href="#"
-              role="button"
-              class="primary-button"
-              aria-label="Donate Now">
-              Donate Now
-            </a>
-            <a
-              href="#"
-              role="button"
-              class="ghost-button"
-              aria-label="more about us ">
-              More About Us
-            </a>
+      <section id="hero" class="" aria-labelledby="hero-title">
+        <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
+          <!-- Left Side -->
+          <div
+            id="heroLeft"
+            class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-44 pt-36 pb-12">
+            <h1
+              id="hero-title"
+              class="mobilelg:text-5xl text-4xl font-bold leading-tight tabletlg:w-10/12 md:w-8/12 mobilelg:w-10/12 w-full">
+              Wrap a Child in Love and Hope.
+            </h1>
+            <p
+              class="text-2xl text-gray-600 tabletmd:w-full md:w-8/12 mobilelg:w-10/12 w-full">
+              Every child deserves warmth, dignity, and a chance to thrive. Join
+              us in spreading love through clothing and changing lives
+              worldwide.
+            </p>
+            <!-- Buttons -->
+            <div class="my-4 flex space-x-2 items-center">
+              <a
+                href="#"
+                role="button"
+                class="primary-button"
+                aria-label="Donate Now">
+                Donate Now
+              </a>
+              <a
+                href="#"
+                role="button"
+                class="ghost-button"
+                aria-label="more about us ">
+                More About Us
+              </a>
+            </div>
+            <div class="social-media flex space-x-5 items-center">
+              <h2 class="text-lg font-bold">Follow us:</h2>
+              <div class="flex space-x-2 items-center">
+                <a
+                  href="https://facebook.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Facebook">
+                  <img
+                    src="/assets/icons/facebook-icon.svg"
+                    alt="Facebook"
+                    class="w-6 h-6" />
+                </a>
+                <a
+                  href="https://twitter.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on X">
+                  <img
+                    src="/assets/icons/x-icon.svg"
+                    alt="twitter-x"
+                    class="w-6 h-6" />
+                </a>
+                <a
+                  href="https://instagram.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Instagram">
+                  <img
+                    src="/assets/icons/instagram-icon.svg"
+                    alt="Instagram"
+                    class="w-6 h-6" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="social-media flex space-x-5 items-center">
-            <h2 class="text-lg font-bold">Follow us:</h2>
-            <div class="flex space-x-2 items-center">
-              <a
-                href="https://facebook.com/yourpage"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow us on Facebook">
-                <img
-                  src="/assets/icons/facebook-icon.svg"
-                  alt="Facebook"
-                  class="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com/yourpage"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow us on X">
-                <img
-                  src="/assets/icons/x-icon.svg"
-                  alt="twitter-x"
-                  class="w-6 h-6" />
-              </a>
-              <a
-                href="https://instagram.com/yourpage"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow us on Instagram">
-                <img
-                  src="/assets/icons/instagram-icon.svg"
-                  alt="Instagram"
-                  class="w-6 h-6" />
-              </a>
+          <!-- Right Side -->
+          <div
+            id="heroRight"
+            class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
+            <div class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
+              <img
+                src="/assets/images/hero-image.png"
+                alt=""
+                class="w-full h-full object-cover" />
             </div>
           </div>
         </div>
-        <!-- Right Side -->
+      </section>
+      <!-- Achievement Section -->
+      <section id="achievement" aria-labelledby="achievement-title" class="">
+        <!-- Section Heading -->
+        <h2 id="achievement-title" class="sr-only">Achievements</h2>
+
+        <!-- Achievement Cards Container -->
         <div
-          id="heroRight"
-          class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
-          <div class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
+          class="flex tabletlg:justify-between sm:justify-center mobilelg:justify-between justify-center items-center min-h-[200px] py-8 tabletlg:px-8 px-4 tabletlg:space-x-3 text-white tabletlg:flex-nowrap flex-wrap md:gap-0 mobilelg:gap-4 gap-y-8">
+          <!-- Achievement Item 1 -->
+          <div
+            class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
             <img
-              src="/assets/images/hero-image.png"
-              alt=""
+              src="/assets/icons/donations.svg"
+              alt="Achievement 1 description"
+              class="w-12 h-12" />
+            <div class="achievement-card">
+              <h3 class="achievement-number">$20K</h3>
+              <span class="achievement-text">Donations Received</span>
+            </div>
+          </div>
+          <div
+            class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
+            <img
+              src="/assets/icons/scholarship.svg"
+              alt="Achievement 1 description"
+              class="w-12 h-12" />
+            <div class="achievement-card">
+              <h3 class="achievement-number">10</h3>
+              <span class="achievement-text">Scholarships Yearly</span>
+            </div>
+          </div>
+          <div
+            class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
+            <img
+              src="/assets/icons/mentored-children.svg"
+              alt="Achievement 1 description"
+              class="w-12 h-12" />
+            <div class="achievement-card">
+              <h3 class="achievement-number">100</h3>
+              <span class="achievement-text">Mentored Children</span>
+            </div>
+          </div>
+          <div
+            class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
+            <img
+              src="/assets/icons/partners.svg"
+              alt="Achievement 1 description"
+              class="w-12 h-12" />
+            <div class="achievement-card">
+              <h3 class="achievement-number">2</h3>
+              <span class="achievement-text">Partner Missionaries Yearly</span>
+            </div>
+          </div>
+          <div
+            class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
+            <img
+              src="/assets/icons/provided.svg"
+              alt="Achievement 1 description"
+              class="w-12 h-12" />
+            <div class="achievement-card">
+              <h3 class="achievement-number">500</h3>
+              <span class="achievement-text"
+                >Children Provided With Clothes And Supplies</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="aboutSection"
+        aria-labelledby="aboutSection-title"
+        class="lg:px-20 tabletlg:px-16 mobilesm:px-8 px-4 mobilelg:py-8 py-4">
+        <h2 id="aboutSection-title" class="sr-only">About Us Section</h2>
+
+        <section class="flex justify-between md:flex-nowrap flex-wrap gap-8">
+          <!-- Split Image Visual -->
+          <aside
+            aria-labelledby="splitImageTitle"
+            class="py-16 tabletlg:w-7/12 md:w-6/12 sm:w-9/12 w-full mx-auto">
+            <h3 id="splitImageTitle" class="sr-only">
+              Split Shared Background Image
+            </h3>
+            <img
+              src="/assets/images/about-split-bg.png"
+              alt="Children and mentors participating in a group activity"
+              class="tabletlg:w-10/12 w-full h-full rounded-lg" />
+          </aside>
+
+          <!-- About Content -->
+          <article
+            class="tabletlg:w-5/12 md:w-6/12 sm:w-10/12 w-full flex flex-col justify-center items-start text-[var(--color-text)] gap-3">
+            <div>
+              <h3
+                class="text-xl font-bold leading-tight text-[var(--color-purple)]">
+                Get to Know Us
+              </h3>
+              <h1 class="heading-1">What We Are All About</h1>
+            </div>
+
+            <p class="mt-4 text-2xl text-gray-600">
+              Project Clothe A Child is a 501(c)(3) non-profit organization
+              created to serve as a conduit of aid to disadvantaged youth by
+              providing life essentials and mentorship.
+            </p>
+            <p class="mt-4 text-2xl text-gray-600">
+              Join us on our journey to give hope and to make a difference.
+            </p>
+
+            <div class="mt-6 flex space-x-2 items-center">
+              <a
+                href="#"
+                role="button"
+                class="primary-button"
+                aria-label="donate now">
+                Donate Now
+              </a>
+              <a
+                href="#"
+                role="button"
+                class="ghost-button"
+                aria-label="more about us">
+                More About Us
+              </a>
+            </div>
+          </article>
+        </section>
+        <section
+          class="mx-auto lg:px-32 md:px-16 sm:px-4 px-0 w-full mt-10"
+          aria-labelledby="activities-title">
+          <div class="lg:w-10/12 tabletlg:w-11/12 w-full">
+            <h3
+              id="activities-title"
+              class="text-xl font-bold leading-tight text-[var(--color-purple)]">
+              Our Activities
+            </h3>
+            <h2 class="heading-1">
+              Empowering Young Minds, Nurturing Bright Futures, and Creating
+              Lasting Change—One Child, One Dream at a Time
+            </h2>
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="touching-lives-title"
+          class="md:py-20 py-12 flex lg:justify-evenly tabletmd:justify-between justify-center tabletmd:gap-0 sm:gap-8 mobilelg:gap-4 gap-8 tabletmd:flex-nowrap flex-wrap">
+          <div class="card">
+            <h3 class="card-title">Touching Lives</h3>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. Consectetur est sed
+              facilisis viverra quis diam.
+            </p>
+            <a href="#" role="button" class="card-btn"> Learn More </a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Making A Difference</h3>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. Consectetur est sed
+              facilisis viverra quis diam.
+            </p>
+            <a href="#" role="button" class="card-btn"> Learn More </a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Spreading The Love Of Christ</h3>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. Consectetur est sed
+              facilisis viverra quis diam.
+            </p>
+            <a href="#" role="button" class="card-btn"> Learn More </a>
+          </div>
+        </section>
+      </section>
+      <section
+        class="tabletlg:pt-12 md:pt-4 pt-0"
+        aria-labelledby="support"
+        id="support">
+        <h2 id="support" class="sr-only">Support Us</h2>
+        <div
+          class="flex justify-between items-center lg:px-32 tabletlg:px-16 mobilesm:px-8 px-4 md:min-h-[400px] min-h-[280px] tabletlg:gap-0 gap-4">
+          <div
+            class="tabletlg:w-4/12 mobilelg:w-5/12 w-7/12 h-80 self-end md:block hidden"
+            role="img">
+            <img
+              src="assets/images/support-christmat.png"
+              alt="christmas image"
               class="w-full h-full object-cover" />
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievement Section -->
-    <section id="achievement" aria-labelledby="achievement-title" class="">
-      <!-- Section Heading -->
-      <h2 id="achievement-title" class="sr-only">Achievements</h2>
-
-      <!-- Achievement Cards Container -->
-      <div
-        class="flex tabletlg:justify-between sm:justify-center mobilelg:justify-between justify-center items-center min-h-[200px] py-8 tabletlg:px-8 px-4 tabletlg:space-x-3 text-white tabletlg:flex-nowrap flex-wrap md:gap-0 mobilelg:gap-4 gap-y-8">
-        <!-- Achievement Item 1 -->
-        <div
-          class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
-          <img
-            src="/assets/icons/donations.svg"
-            alt="Achievement 1 description"
-            class="w-12 h-12" />
-          <div class="achievement-card">
-            <h3 class="achievement-number">$20K</h3>
-            <span class="achievement-text">Donations Received</span>
-          </div>
-        </div>
-        <div
-          class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
-          <img
-            src="/assets/icons/scholarship.svg"
-            alt="Achievement 1 description"
-            class="w-12 h-12" />
-          <div class="achievement-card">
-            <h3 class="achievement-number">10</h3>
-            <span class="achievement-text">Scholarships Yearly</span>
-          </div>
-        </div>
-        <div
-          class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
-          <img
-            src="/assets/icons/mentored-children.svg"
-            alt="Achievement 1 description"
-            class="w-12 h-12" />
-          <div class="achievement-card">
-            <h3 class="achievement-number">100</h3>
-            <span class="achievement-text">Mentored Children</span>
-          </div>
-        </div>
-        <div
-          class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
-          <img
-            src="/assets/icons/partners.svg"
-            alt="Achievement 1 description"
-            class="w-12 h-12" />
-          <div class="achievement-card">
-            <h3 class="achievement-number">2</h3>
-            <span class="achievement-text">Partner Missionaries Yearly</span>
-          </div>
-        </div>
-        <div
-          class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
-          <img
-            src="/assets/icons/provided.svg"
-            alt="Achievement 1 description"
-            class="w-12 h-12" />
-          <div class="achievement-card">
-            <h3 class="achievement-number">500</h3>
-            <span class="achievement-text"
-              >Children Provided With Clothes And Supplies</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      id="aboutSection"
-      aria-labelledby="aboutSection-title"
-      class="lg:px-20 tabletlg:px-16 mobilesm:px-8 px-4 mobilelg:py-8 py-4">
-      <h2 id="aboutSection-title" class="sr-only">About Us Section</h2>
-
-      <section class="flex justify-between md:flex-nowrap flex-wrap gap-8">
-        <!-- Split Image Visual -->
-        <aside
-          aria-labelledby="splitImageTitle"
-          class="py-16 tabletlg:w-7/12 md:w-6/12 sm:w-9/12 w-full mx-auto">
-          <h3 id="splitImageTitle" class="sr-only">
-            Split Shared Background Image
-          </h3>
-          <img
-            src="/assets/images/about-split-bg.png"
-            alt="Children and mentors participating in a group activity"
-            class="tabletlg:w-10/12 w-full h-full rounded-lg" />
-        </aside>
-
-        <!-- About Content -->
-        <article
-          class="tabletlg:w-5/12 md:w-6/12 sm:w-10/12 w-full flex flex-col justify-center items-start text-[var(--color-text)] gap-3">
-          <div>
-            <h3
-              class="text-xl font-bold leading-tight text-[var(--color-purple)]">
-              Get to Know Us
-            </h3>
-            <h1 class="heading-1">What We Are All About</h1>
-          </div>
-
-          <p class="mt-4 text-2xl text-gray-600">
-            Project Clothe A Child is a 501(c)(3) non-profit organization
-            created to serve as a conduit of aid to disadvantaged youth by
-            providing life essentials and mentorship.
-          </p>
-          <p class="mt-4 text-2xl text-gray-600">
-            Join us on our journey to give hope and to make a difference.
-          </p>
-
-          <div class="mt-6 flex space-x-2 items-center">
-            <a
-              href="#"
-              role="button"
-              class="primary-button"
-              aria-label="donate now">
-              Donate Now
-            </a>
-            <a
-              href="#"
-              role="button"
-              class="ghost-button"
-              aria-label="more about us">
-              More About Us
-            </a>
-          </div>
-        </article>
-      </section>
-      <section
-        class="mx-auto lg:px-32 md:px-16 sm:px-4 px-0 w-full mt-10"
-        aria-labelledby="activities-title">
-        <div class="lg:w-10/12 tabletlg:w-11/12 w-full">
-          <h3
-            id="activities-title"
-            class="text-xl font-bold leading-tight text-[var(--color-purple)]">
-            Our Activities
-          </h3>
-          <h2 class="heading-1">
-            Empowering Young Minds, Nurturing Bright Futures, and Creating
-            Lasting Change—One Child, One Dream at a Time
-          </h2>
-        </div>
-      </section>
-
-      <section
-        aria-labelledby="touching-lives-title"
-        class="md:py-20 py-12 flex lg:justify-evenly tabletmd:justify-between justify-center tabletmd:gap-0 sm:gap-8 mobilelg:gap-4 gap-8 tabletmd:flex-nowrap flex-wrap">
-        <div class="card">
-          <h3 class="card-title">Touching Lives</h3>
-
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur. Consectetur est sed
-            facilisis viverra quis diam.
-          </p>
-          <a href="#" role="button" class="card-btn"> Learn More </a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Making A Difference</h3>
-
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur. Consectetur est sed
-            facilisis viverra quis diam.
-          </p>
-          <a href="#" role="button" class="card-btn"> Learn More </a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Spreading The Love Of Christ</h3>
-
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur. Consectetur est sed
-            facilisis viverra quis diam.
-          </p>
-          <a href="#" role="button" class="card-btn"> Learn More </a>
-        </div>
-      </section>
-    </section>
-    <section
-      class="tabletlg:pt-12 md:pt-4 pt-0"
-      aria-labelledby="support"
-      id="support">
-      <h2 id="support" class="sr-only">Support Us</h2>
-      <div
-        class="flex justify-between items-center lg:px-32 tabletlg:px-16 mobilesm:px-8 px-4 md:min-h-[400px] min-h-[280px] tabletlg:gap-0 gap-4">
-        <div
-          class="tabletlg:w-4/12 mobilelg:w-5/12 w-7/12 h-80 self-end md:block hidden"
-          role="img">
-          <img
-            src="assets/images/support-christmat.png"
-            alt="christmas image"
-            class="w-full h-full object-cover" />
-        </div>
-        <div class="md:w-7/12 sm:w-10/12 w-full h-full">
-          <h1 class="heading-1 text-white lg:w-10/12 w-full">
-            Support 'A Christmas Night of Hope' 2025 Annual Fundraiser Campaign
-          </h1>
-          <div
-            class="flex items-center justify-start tabletmd:gap-x-10 gap-x-2 gap-y-4 mt-8 w-full mobilemd:flex-nowrap flex-wrap">
-            <a
-              href="#"
-              class="card-btn lg:w-1/3 mobilemd:w-1/2 w-36 mt-0 font-secondary"
-              role="button"
-              aria-label="make a donation"
-              >Donate Now</a
-            >
-            <a
-              href="#"
-              class="cta-btn font-secondary lg:w-1/3 mobilemd:w-1/2 w-40"
-              role="button"
-              aria-label="get your ticket"
-              >Get Your Ticket</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pt-4" aria-labelledby="ctaSection" id="ctaSection">
-      <h2 id="cta-title" class="sr-only">Get Involved</h2>
-      <div
-        class="flex justify-between items-center tabletlg:px-16 mobilesm:px-8 px-4 min-h-72 md:flex-nowrap flex-wrap gap-y-8 py-8">
-        <div class="md:w-7/12 mobilelg:w-10/12 w-full">
-          <h1 class="heading-1 text-white 2">
-            “Our goal is to impact as many disadvantaged children as possible”
-          </h1>
-          <div
-            class="flex items-center justify-start gap-x-2 gap-y-4 mt-8 mobilelg:flex-nowrap flex-wrap">
-            <a
-              href="#"
-              class="primary-button lg:w-1/3 mt-0 font-secondary hover:ring-white hover:ring-2"
-              role="button"
-              aria-label="get involved"
-              >Get Involved Now!</a
-            >
-            <div class="mobilemd:w-6/12 flex items-center w-10/12">
-              <hr class="border-1 border-white w-full" />
-              <span class="fa fa-circle text-[0.5rem] text-white"></span>
+          <div class="md:w-7/12 sm:w-10/12 w-full h-full">
+            <h1 class="heading-1 text-white lg:w-10/12 w-full">
+              Support 'A Christmas Night of Hope' 2025 Annual Fundraiser
+              Campaign
+            </h1>
+            <div
+              class="flex items-center justify-start tabletmd:gap-x-10 gap-x-2 gap-y-4 mt-8 w-full mobilemd:flex-nowrap flex-wrap">
+              <a
+                href="#"
+                class="card-btn lg:w-1/3 mobilemd:w-1/2 w-36 mt-0 font-secondary"
+                role="button"
+                aria-label="make a donation"
+                >Donate Now</a
+              >
+              <a
+                href="#"
+                class="cta-btn font-secondary lg:w-1/3 mobilemd:w-1/2 w-40"
+                role="button"
+                aria-label="get your ticket"
+                >Get Your Ticket</a
+              >
             </div>
           </div>
         </div>
+      </section>
+      <section class="pt-4" aria-labelledby="ctaSection" id="ctaSection">
+        <h2 id="cta-title" class="sr-only">Get Involved</h2>
         <div
-          class="tabletlg:w-4/12 md:w-5/12 w-full md:h-64 h-52 self-end"
-          role="img">
-          <img
-            src="assets/images/get-invovled.png"
-            alt="christmas image"
-            class="md:w-10/12 object-center w-full ms-auto h-full object-cover" />
-        </div>
-      </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  </body>
-  <footer>
-    <section class="footer bg-purplelight" id="footer" aria-labelledby="">
-      <div
-        class="flex justify-between tabletlg:px-16 mobilelg:px-8 px-4 py-12 lg:flex-nowrap flex-wrap gap-y-8">
-        <div class="lg:w-2/12 tabletsm:w-3/12 mobilelg:w-4/12 w-10/12">
-          <a href="#" aria-label="footer logo"
-            ><img
-              src="/assets/icons/brand-logo.svg"
-              alt="clothe a child logo"
-              class="sm:w-10/12 w-7/12" />
-            <span class="sr-only">footer logo</span>
-          </a>
-          <p class="text-text font-semibold font-secondary text-xl">
-            Changing the world one child at a time!
-          </p>
-        </div>
-        <div
-          class="lg:w-1/12 tabletsm:w-2/12 mobilelg:w-3/12 mobilemd:w-4/12 w-6/12 space-y-3 font-secondary">
-          <h3 class="text-blue font-semibold font-secondary text-xl">Home</h3>
-          <ul class="font-secondary space-y-4 text-blue">
-            <li><a href="#" aria-label="home">Home</a></li>
-            <li><a href="#" aria-label="about us">About us</a></li>
-            <li><a href="#" aria-label="who we are">Who We Are</a></li>
-            <li><a href="#" aria-label="donate">Donate</a></li>
-          </ul>
-        </div>
-        <div
-          class="lg:w-1/12 tabletsm:w-2/12 mobilelg:w-3/12 mobilemd:w-4/12 w-6/12 space-y-4">
-          <h3 class="text-blue font-semibold font-secondary text-xl">More</h3>
-          <ul class="font-secondary space-y-4 text-blue">
-            <li><a href="#" aria-label="home">Our Projects</a></li>
-            <li><a href="#" aria-label="about us">Events</a></li>
-            <li><a href="#" aria-label="who we are">Get Involved</a></li>
-          </ul>
-        </div>
-        <div class="lg:w-1/12 tabletsm:w-2/12 w-4/12 space-y-4">
-          <h3 class="text-blue font-semibold font-secondary text-xl">Social</h3>
-          <ul class="font-secondary space-y-4 text-blue">
-            <li><a href="#" aria-label="home">Facebook</a></li>
-            <li><a href="#" aria-label="about us">Instagram</a></li>
-            <li><a href="#" aria-label="who we are">X(formerly twitter)</a></li>
-          </ul>
-        </div>
-        <div
-          class="lg:w-3/12 space-y-4 tabletsm:w-6/12 mobilelg:w-8/12 w-10/12">
-          <h1 class="text-blue font-semibold font-secondary text-3xl">
-            Subscribe to get latest updates
-          </h1>
-          <div class="flex w-full items-center">
-            <input
-              type="text"
-              aria-label="subscribe"
-              placeholder="Your email"
-              class="w-7/12 h-12 px-2 text-blue font-secondary text-base ring-1 ring-blue active:outline-none focus:outline-none bg-transparent active:bg-[#fef4fc] focus:bg-[#fef4fc] placeholder:text-blue" />
-            <button
-              class="primary-button w-5/12 text-center h-12 ring-1 ring-blue hover:ring-purple">
-              Subscribe
-            </button>
+          class="flex justify-between items-center tabletlg:px-16 mobilesm:px-8 px-4 min-h-72 md:flex-nowrap flex-wrap gap-y-8 py-8">
+          <div class="md:w-7/12 mobilelg:w-10/12 w-full">
+            <h1 class="heading-1 text-white 2">
+              “Our goal is to impact as many disadvantaged children as possible”
+            </h1>
+            <div
+              class="flex items-center justify-start gap-x-2 gap-y-4 mt-8 mobilelg:flex-nowrap flex-wrap">
+              <a
+                href="#"
+                class="primary-button lg:w-1/3 mt-0 font-secondary hover:ring-white hover:ring-2"
+                role="button"
+                aria-label="get involved"
+                >Get Involved Now!</a
+              >
+              <div class="mobilemd:w-6/12 flex items-center w-10/12">
+                <hr class="border-1 border-white w-full" />
+                <span class="fa fa-circle text-[0.5rem] text-white"></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tabletlg:w-4/12 md:w-5/12 w-full md:h-64 h-52 self-end"
+            role="img">
+            <img
+              src="assets/images/get-invovled.png"
+              alt="christmas image"
+              class="md:w-10/12 object-center w-full ms-auto h-full object-cover" />
           </div>
         </div>
-      </div>
-    </section>
-  </footer>
+      </section>
+    </main>
+    <footer>
+      <section class="footer bg-purplelight" id="footer" aria-labelledby="">
+        <div
+          class="flex justify-between tabletlg:px-16 mobilelg:px-8 px-4 py-12 lg:flex-nowrap flex-wrap gap-y-8">
+          <div class="lg:w-2/12 tabletsm:w-3/12 mobilelg:w-4/12 w-10/12">
+            <a href="#" aria-label="footer logo"
+              ><img
+                src="/assets/icons/brand-logo.svg"
+                alt="clothe a child logo"
+                class="sm:w-10/12 w-7/12" />
+              <span class="sr-only">footer logo</span>
+            </a>
+            <p class="text-text font-semibold font-secondary text-xl">
+              Changing the world one child at a time!
+            </p>
+          </div>
+          <div
+            class="lg:w-1/12 tabletsm:w-2/12 mobilelg:w-3/12 mobilemd:w-4/12 w-6/12 space-y-3 font-secondary">
+            <h3 class="text-blue font-semibold font-secondary text-xl">Home</h3>
+            <ul class="font-secondary space-y-4 text-blue">
+              <li><a href="#" aria-label="home">Home</a></li>
+              <li><a href="#" aria-label="about us">About us</a></li>
+              <li><a href="#" aria-label="who we are">Who We Are</a></li>
+              <li><a href="#" aria-label="donate">Donate</a></li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-1/12 tabletsm:w-2/12 mobilelg:w-3/12 mobilemd:w-4/12 w-6/12 space-y-4">
+            <h3 class="text-blue font-semibold font-secondary text-xl">More</h3>
+            <ul class="font-secondary space-y-4 text-blue">
+              <li><a href="#" aria-label="home">Our Projects</a></li>
+              <li><a href="#" aria-label="about us">Events</a></li>
+              <li><a href="#" aria-label="who we are">Get Involved</a></li>
+            </ul>
+          </div>
+          <div class="lg:w-1/12 tabletsm:w-2/12 w-4/12 space-y-4">
+            <h3 class="text-blue font-semibold font-secondary text-xl">
+              Social
+            </h3>
+            <ul class="font-secondary space-y-4 text-blue">
+              <li><a href="#" aria-label="home">Facebook</a></li>
+              <li><a href="#" aria-label="about us">Instagram</a></li>
+              <li>
+                <a href="#" aria-label="who we are">X(formerly twitter)</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-3/12 space-y-4 tabletsm:w-6/12 mobilelg:w-8/12 w-10/12">
+            <h1 class="text-blue font-semibold font-secondary text-3xl">
+              Subscribe to get latest updates
+            </h1>
+            <div class="flex w-full items-center">
+              <input
+                type="text"
+                aria-label="subscribe"
+                placeholder="Your email"
+                class="w-7/12 h-12 px-2 text-blue font-secondary text-base ring-1 ring-blue active:outline-none focus:outline-none bg-transparent active:bg-[#fef4fc] focus:bg-[#fef4fc] placeholder:text-blue" />
+              <button
+                class="primary-button w-5/12 text-center h-12 ring-1 ring-blue hover:ring-purple">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
