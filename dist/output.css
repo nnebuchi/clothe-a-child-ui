@@ -1081,6 +1081,11 @@ html,
   margin-bottom: 2rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -2872,6 +2877,14 @@ menu {
 
   .lg\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
   }
 }
 
