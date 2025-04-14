@@ -92,15 +92,15 @@ header {
   width: 100%;
 }
 .card:nth-child(1) {
-  background-image: url("/assets/images/touching-bg.png");
+  background-image: url("../assets/images/touching-bg.png");
 }
 
 .card:nth-child(2) {
-  background-image: url("/assets/images/making-bg.png");
+  background-image: url("../assets/images/making-bg.png");
 }
 
 .card:nth-child(3) {
-  background-image: url("/assets/images/spreading-bg.png");
+  background-image: url("../assets/images/spreading-bg.png");
 }
 
 /* Add a transition to the menu to smoothly animate its entrance */
@@ -207,14 +207,14 @@ menu {
 }
 
 #achievement {
-  background-image: url("/assets/images/achievement-bg.png");
+  background-image: url("../assets/images/achievement-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #aboutSection {
-  background-image: url("/assets/images/about-bg.png");
+  background-image: url("../assets/images/about-bg.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -222,7 +222,7 @@ menu {
 }
 
 #support {
-  background-image: url("/assets/images/bg-spiral.png");
+  background-image: url("../assets/images/bg-spiral.png");
   background-size: cover;
   background-blend-mode: overlay;
   /* background-color: var(--color-blue); */
@@ -231,14 +231,14 @@ menu {
 }
 
 #ctaSection {
-  background-image: url("/assets/images/achievement-bg.png");
+  background-image: url("../assets/images/achievement-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 300px;
 }
 #donationTitle {
-  background-image: url("/assets/images/about-bg.png");
+  background-image: url("../assets/images/about-bg.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -248,7 +248,7 @@ menu {
 }
 
 #projectEducate {
-  background-image: url("/assets/images/about-bg.png");
+  background-image: url("../assets/images/about-bg.png");
   background-size: contain;
   background-position: center center;
   background-repeat: repeat-y;
@@ -256,7 +256,7 @@ menu {
 }
 .donation-card {
   /* width: 32%; */
-  background-image: url("/assets/images/donate/donation-bg.png");
+  background-image: url("../assets/images/donate/donation-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +264,7 @@ menu {
 }
 
 .quote {
-  background-image: url("/assets/images/quote-bg.png");
+  background-image: url("../assets/images/quote-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
