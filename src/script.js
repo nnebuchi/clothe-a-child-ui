@@ -72,113 +72,52 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
-// Tab functionality
+// Tab
 document.addEventListener("DOMContentLoaded", () => {
-  const tabList = document.querySelectorAll('[role="tab"]');
+  const tabLists = document.querySelectorAll("[data-tabs-toggle]");
 
-  tabList.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const parentUl = tab.closest("ul");
-      const activeClasses =
-        parentUl.dataset.tabsActiveClasses?.split(" ") || [];
-      const inactiveClasses =
-        parentUl.dataset.tabsInactiveClasses?.split(" ") || [];
+  tabLists.forEach((parentUl) => {
+    const tabs = parentUl.querySelectorAll('[role="tab"]');
+    const tabContentContainer = document.querySelector(
+      parentUl.dataset.tabsToggle
+    );
+    const activeClasses = parentUl.dataset.tabsActiveClasses?.split(" ") || [];
+    const inactiveClasses =
+      parentUl.dataset.tabsInactiveClasses?.split(" ") || [];
 
-      // Clear all tabs
-      parentUl.querySelectorAll('[role="tab"]').forEach((t) => {
+    function activateTab(tab) {
+      // Deactivate all tabs
+      tabs.forEach((t) => {
         t.setAttribute("aria-selected", "false");
-        t.classList.remove(...activeClasses);
+        t.classList.remove(...activeClasses, "active"); // 👈 REMOVE 'active' class
         t.classList.add(...inactiveClasses);
       });
 
-      // Hide all tab panels
-      const tabContentContainer = document.querySelector(
-        parentUl.dataset.tabsToggle
-      );
+      // Hide all panels
       tabContentContainer
         .querySelectorAll('[role="tabpanel"]')
         .forEach((panel) => {
           panel.classList.add("hidden");
         });
 
-      // Activate clicked tab
+      // Activate the clicked tab
       tab.setAttribute("aria-selected", "true");
       tab.classList.remove(...inactiveClasses);
-      tab.classList.add(...activeClasses);
+      tab.classList.add(...activeClasses, "active"); // 👈 ADD 'active' class here
 
-      // Show corresponding panel
+      // Show the corresponding panel
       const targetPanel = document.querySelector(tab.dataset.tabsTarget);
       targetPanel.classList.remove("hidden");
+    }
+
+    // Set default active tab (first one)
+    if (tabs.length > 0) {
+      activateTab(tabs[0]);
+    }
+
+    // Add click events
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => activateTab(tab));
     });
   });
 });
-
-// slider
-const images = [
-  {
-    src: "../assets/images/support-christmat.png",
-    alt: "Kids playing outdoors",
-  },
-  {
-    src: "../assets/images/support-christmat.png",
-    alt: "Kids smiling during play",
-  },
-  {
-    src: "../assets/images/support-christmat.png",
-    alt: "Girl at birthday party with hands up",
-  },
-  {
-    src: "../assets/images/support-christmat.png",
-    alt: "Child with raised hands enjoying a game",
-  },
-  {
-    src: "../assets/images/support-christmat.png",
-    alt: "Another happy moment",
-  },
-];
-let currentIndex = 2; // Start from center slide
-const carousel = document.getElementById("carousel");
-
-function renderSlides() {
-  carousel.innerHTML = ""; // Clear carousel
-
-  for (let i = 0; i < images.length; i++) {
-    let classNames =
-      "transition-all duration-500 ease-in-out rounded-xl overflow-hidden object-cover flex-shrink-0 w-[60%] sm:w-[40%] md:w-[30%]";
-
-    if (i === currentIndex) {
-      classNames += " scale-105 z-30";
-    } else if (i === currentIndex - 1 || i === currentIndex + 1) {
-      classNames += " scale-95 opacity-70 z-20";
-    } else {
-      classNames += " hidden sm:block opacity-40 scale-90 z-10";
-    }
-
-    carousel.innerHTML += `
-          <li class="${classNames}" role="group" aria-label="Slide ${
-      i + 1
-    } of ${images.length}">
-            <img src="${images[i].src}" alt="${
-      images[i].alt
-    }" class="w-full h-full object-cover" />
-          </li>
-        `;
-  }
-}
-
-function moveSlide(direction) {
-  const total = images.length;
-  currentIndex = (currentIndex + direction + total) % total;
-  renderSlides();
-}
-
-document.getElementById("prev").addEventListener("click", () => moveSlide(-1));
-document.getElementById("next").addEventListener("click", () => moveSlide(1));
-
-// Optional: keyboard support
-document.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowRight") moveSlide(1);
-  if (e.key === "ArrowLeft") moveSlide(-1);
-});
-
-renderSlides();

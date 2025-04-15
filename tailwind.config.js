@@ -6,6 +6,8 @@ export default {
     "donate.html",
     "projects.html",
     "events.html",
+    "involved.html",
+    "about.html",
   ],
   theme: {
     extend: {
