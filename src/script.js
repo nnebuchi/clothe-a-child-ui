@@ -102,52 +102,39 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
-// Tab
-document.addEventListener("DOMContentLoaded", () => {
-  const tabLists = document.querySelectorAll("[data-tabs-toggle]");
+// Tabs
 
-  tabLists.forEach((parentUl) => {
-    const tabs = parentUl.querySelectorAll('[role="tab"]');
-    const tabContentContainer = document.querySelector(
-      parentUl.dataset.tabsToggle
-    );
-    const activeClasses = parentUl.dataset.tabsActiveClasses?.split(" ") || [];
-    const inactiveClasses =
-      parentUl.dataset.tabsInactiveClasses?.split(" ") || [];
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all tab buttons and panels
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabPanels = document.querySelectorAll(".tab-panel");
 
-    function activateTab(tab) {
-      // Deactivate all tabs
-      tabs.forEach((t) => {
-        t.setAttribute("aria-selected", "false");
-        t.classList.remove(...activeClasses, "active"); // 👈 REMOVE 'active' class
-        t.classList.add(...inactiveClasses);
-      });
+  // Function to activate a specific tab
+  function activateTab(tabButton) {
+    // Remove active state from all buttons
+    tabButtons.forEach((btn) => btn.classList.remove("active"));
+    // Hide all tab panels
+    tabPanels.forEach((panel) => panel.classList.add("hidden"));
 
-      // Hide all panels
-      tabContentContainer
-        .querySelectorAll('[role="tabpanel"]')
-        .forEach((panel) => {
-          panel.classList.add("hidden");
-        });
-
-      // Activate the clicked tab
-      tab.setAttribute("aria-selected", "true");
-      tab.classList.remove(...inactiveClasses);
-      tab.classList.add(...activeClasses, "active"); // 👈 ADD 'active' class here
-
-      // Show the corresponding panel
-      const targetPanel = document.querySelector(tab.dataset.tabsTarget);
-      targetPanel.classList.remove("hidden");
+    // Add active class to the clicked tab button
+    tabButton.classList.add("active");
+    // Get the associated tab panel ID from data attribute
+    const tabId = tabButton.getAttribute("data-tab");
+    const activePanel = document.getElementById(tabId);
+    if (activePanel) {
+      activePanel.classList.remove("hidden");
     }
+  }
 
-    // Set default active tab (first one)
-    if (tabs.length > 0) {
-      activateTab(tabs[0]);
-    }
-
-    // Add click events
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => activateTab(tab));
+  // Attach click event listeners to all tab buttons
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      activateTab(button);
     });
   });
+
+  // Activate the first tab by default
+  if (tabButtons.length > 0) {
+    activateTab(tabButtons[0]);
+  }
 });

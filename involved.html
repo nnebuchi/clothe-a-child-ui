@@ -322,710 +322,695 @@
       <section
         class="bg-[#F9E8F699] xl:px-56 tabletlg:px-16 tabletmd:px-8 tabletsm:px-16 mobilelg:px-8 px-4 mx-auto">
         <div class="pt-8 pb-24">
-          <div class="md:mb-24 mobilelg:mb-12 mb-8">
-            <ul
-              class="flex flex-wrap -mb-px text-sm font-medium text-center lg:justify-center md:justify-evenly justify-center"
-              id="default-tab"
-              data-tabs-toggle="#default-tab-content"
-              role="tablist">
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block mobilelg:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl mobilemd:text-[1rem] text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                  id="profile-tab"
-                  data-tabs-target="#profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false">
-                  Become a volunteer
-                </button>
-              </li>
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block mobilelg:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl mobilemd:text-[1rem] text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                  id="dashboard-tab"
-                  data-tabs-target="#dashboard"
-                  type="button"
-                  role="tab"
-                  aria-controls="dashboard"
-                  aria-selected="false">
-                  Become A Sponsor
-                </button>
-              </li>
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block mobilelg:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl mobilemd:text-[1rem] text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                  id="settings-tab"
-                  data-tabs-target="#settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="settings"
-                  aria-selected="false">
-                  Become A Partner
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div id="default-tab-content">
+          <div id="myTabs" class="max-w-6xl mx-auto">
+            <!-- Tab Buttons -->
             <div
-              class="hidden"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab">
-              <div
-                class="flex md:justify-between justify-evenly items-center w-full tabletmd:flex-nowrap flex-wrap tabletmd:h-[40rem]">
+              class="flex mobilelg:flex-nowrap flex-wrap gap-0 justify-center">
+              <button
+                class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                data-tab="tab1">
+                Become A Volunteer
+              </button>
+              <button
+                class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                data-tab="tab2">
+                Become A Sponsor
+              </button>
+              <button
+                class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                data-tab="tab3">
+                Become A Partner
+              </button>
+            </div>
+            <!-- Tab Contents -->
+            <div class="tab-content mt-12">
+              <!-- Each panel is hidden by default except the active one -->
+              <div id="tab1" class="tab-panel">
                 <div
-                  class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex">
-                  <img
-                    src="/assets/images/form-img.png"
-                    alt=""
-                    class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover" />
+                  class="flex md:justify-between justify-evenly items-center w-full tabletmd:flex-nowrap flex-wrap tabletmd:h-[40rem]">
                   <div
-                    class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
-                </div>
-                <div class="tabletmd:w-7/12 w-full h-full">
-                  <!-- Modal content -->
-                  <div
-                    class="relative bg-white shadow-sm tabletmd:rounded-r-sm rounded-b-sm">
-                    <!-- Modal header -->
+                    class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex">
+                    <img
+                      src="/assets/images/form-img.png"
+                      alt=""
+                      class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover" />
                     <div
-                      class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
-                      <div>
-                        <h3
-                          class="mobilemd:text-2xl text-xl font-secondary font-semibold text-blue">
-                          Together we can change lives
-                        </h3>
-                        <p class="text-lg text-gray-400">
-                          Please fill the form below
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Modal body -->
-                    <form class="p-4 md:p-5">
+                      class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
+                  </div>
+                  <div class="tabletmd:w-7/12 w-full h-full">
+                    <!-- Modal content -->
+                    <div
+                      class="relative bg-white shadow-sm tabletmd:rounded-r-sm rounded-b-sm">
+                      <!-- Modal header -->
                       <div
-                        class="grid gap-4 mb-4 grid-cols-2 xl:max-h-[373px] max-h-[373px] pe-2 overflow-y-scroll">
-                        <div class="col-span-2">
-                          <label
-                            for="name"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Name</label
-                          >
-                          <input
-                            type="name"
-                            name="name"
-                            id="name"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter full name"
-                            required="" />
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                        <div>
+                          <h3
+                            class="mobilemd:text-2xl text-xl font-secondary font-semibold text-blue">
+                            Together we can change lives
+                          </h3>
+                          <p class="text-lg text-gray-400">
+                            Please fill the form below
+                          </p>
                         </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="email"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your email"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="phone"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Phone Number</label
-                          >
-                          <input
-                            type="tel"
-                            name="phone"
-                            id="phone"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your phone number"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="gender"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Gender</label
-                          >
-                          <div class="flex items-center space-x-2">
-                            <div
-                              class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
-                              <label for="male" class="text-text">Male</label>
+                      </div>
+                      <!-- Modal body -->
+                      <form class="p-4 md:p-5">
+                        <div
+                          class="grid gap-4 mb-4 grid-cols-2 xl:max-h-[373px] max-h-[373px] pe-2 overflow-y-scroll">
+                          <div class="col-span-2">
+                            <label
+                              for="name"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Name</label
+                            >
+                            <input
+                              type="name"
+                              name="name"
+                              id="name"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter full name"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="email"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your email"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="phone"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="tel"
+                              name="phone"
+                              id="phone"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your phone number"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="gender"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Gender</label
+                            >
+                            <div class="flex items-center space-x-2">
+                              <div
+                                class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
+                                <label for="male" class="text-text">Male</label>
 
-                              <input
-                                type="checkbox"
-                                name="male"
-                                id="male"
-                                class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
-                                placeholder="What do you do?"
-                                required="" />
-                            </div>
-                            <div
-                              class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
-                              <label for="female" class="text-text"
-                                >Female</label
-                              >
+                                <input
+                                  type="checkbox"
+                                  name="male"
+                                  id="male"
+                                  class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
+                                  placeholder="What do you do?"
+                                  required="" />
+                              </div>
+                              <div
+                                class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
+                                <label for="female" class="text-text"
+                                  >Female</label
+                                >
 
-                              <input
-                                type="checkbox"
-                                name="female"
-                                id="female"
-                                class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
-                                placeholder="What do you do?"
-                                required="" />
+                                <input
+                                  type="checkbox"
+                                  name="female"
+                                  id="female"
+                                  class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
+                                  placeholder="What do you do?"
+                                  required="" />
+                              </div>
                             </div>
                           </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="occupation"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Occupation</label
+                            >
+                            <input
+                              type="text"
+                              name="occupation"
+                              id="occupation"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="What do you do?"
+                              required="" />
+                          </div>
+                          <div class="col-span-2">
+                            <label
+                              for="address"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Home Address</label
+                            >
+                            <input
+                              type="text"
+                              name="address"
+                              id="address"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your home address"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="country"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Country</label
+                            >
+                            <select
+                              id="country"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select country
+                              </option>
+                              <option value="NGN">Nigeria</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="province"
+                              class="block mb-2 text-base font-medium text-text"
+                              >State/Province</label
+                            >
+                            <select
+                              id="province"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select state/province
+                              </option>
+                              <option value="NGN">Texas</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="town"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Town/City</label
+                            >
+                            <select
+                              id="town"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select state/province
+                              </option>
+                              <option value="NGN">Texas</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="occupation"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Occupation</label
-                          >
-                          <input
-                            type="text"
-                            name="occupation"
-                            id="occupation"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="What do you do?"
-                            required="" />
-                        </div>
-                        <div class="col-span-2">
-                          <label
-                            for="address"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Home Address</label
-                          >
-                          <input
-                            type="text"
-                            name="address"
-                            id="address"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your home address"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="country"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Country</label
-                          >
-                          <select
-                            id="country"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select country
-                            </option>
-                            <option value="NGN">Nigeria</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="province"
-                            class="block mb-2 text-base font-medium text-text"
-                            >State/Province</label
-                          >
-                          <select
-                            id="province"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select state/province
-                            </option>
-                            <option value="NGN">Texas</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="town"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Town/City</label
-                          >
-                          <select
-                            id="town"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select state/province
-                            </option>
-                            <option value="NGN">Texas</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                      </div>
 
-                      <!-- Modal Footer -->
-                      <div
-                        class="flex items-center justify-between py-8 border-t rounded-0 border-gray-200 w-full">
+                        <!-- Modal Footer -->
                         <div
-                          class="flex items-center mobilemd:gap-8 gap-4 w-full justify-between mobilemd:flex-nowrap flex-wrap">
-                          <button
-                            type="submit"
-                            class="primary-button mobilemd:w-2/5 w-9/12">
-                            <a
-                              href="#"
-                              role="button"
-                              class=""
-                              aria-label="Register">
-                              Register
-                            </a>
-                          </button>
+                          class="flex items-center justify-between py-8 border-t rounded-0 border-gray-200 w-full">
+                          <div
+                            class="flex items-center mobilemd:gap-8 gap-4 w-full justify-between mobilemd:flex-nowrap flex-wrap">
+                            <button
+                              type="submit"
+                              class="primary-button mobilemd:w-2/5 w-9/12">
+                              <a
+                                href="#"
+                                role="button"
+                                class=""
+                                aria-label="Register">
+                                Register
+                              </a>
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="hidden"
-              id="dashboard"
-              role="tabpanel"
-              aria-labelledby="dashboard-tab">
-              <div
-                class="flex md:justify-between justify-evenly items-center w-full tabletmd:flex-nowrap flex-wrap tabletmd:h-[40rem]">
+              <div id="tab2" class="tab-panel hidden">
                 <div
-                  class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex rounded-0">
-                  <img
-                    src="/assets/images/form-img.png"
-                    alt=""
-                    class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover rounded-0" />
+                  class="flex md:justify-between justify-evenly items-center w-full tabletmd:flex-nowrap flex-wrap tabletmd:h-[40rem]">
                   <div
-                    class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
-                </div>
-                <div class="tabletmd:w-7/12 w-full h-full">
-                  <!-- Modal content -->
-                  <div
-                    class="relative bg-white shadow-sm tabletmd:rounded-r-sm rounded-b-sm">
-                    <!-- Modal header -->
+                    class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex">
+                    <img
+                      src="/assets/images/form-img.png"
+                      alt=""
+                      class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover" />
                     <div
-                      class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
-                      <div>
-                        <h3
-                          class="mobilemd:text-2xl text-xl font-secondary font-semibold text-blue">
-                          Together we can change lives
-                        </h3>
-                        <p class="text-lg text-gray-400">
-                          Please fill the form below
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Modal body -->
-                    <form class="p-4 md:p-5">
+                      class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
+                  </div>
+                  <div class="tabletmd:w-7/12 w-full h-full">
+                    <!-- Modal content -->
+                    <div
+                      class="relative bg-white shadow-sm tabletmd:rounded-r-sm rounded-b-sm">
+                      <!-- Modal header -->
                       <div
-                        class="grid gap-4 mb-4 grid-cols-2 xl:max-h-[373px] max-h-[373px] pe-2 overflow-y-scroll">
-                        <div class="col-span-2">
-                          <label
-                            for="name"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Name</label
-                          >
-                          <input
-                            type="name"
-                            name="name"
-                            id="name"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter full name"
-                            required="" />
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                        <div>
+                          <h3
+                            class="mobilemd:text-2xl text-xl font-secondary font-semibold text-blue">
+                            Together we can change lives
+                          </h3>
+                          <p class="text-lg text-gray-400">
+                            Please fill the form below
+                          </p>
                         </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="email"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your email"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="phone"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Phone Number</label
-                          >
-                          <input
-                            type="tel"
-                            name="phone"
-                            id="phone"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your phone number"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="gender"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Gender</label
-                          >
-                          <div class="flex items-center space-x-2">
-                            <div
-                              class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
-                              <label for="male" class="text-text">Male</label>
+                      </div>
+                      <!-- Modal body -->
+                      <form class="p-4 md:p-5">
+                        <div
+                          class="grid gap-4 mb-4 grid-cols-2 xl:max-h-[373px] max-h-[373px] pe-2 overflow-y-scroll">
+                          <div class="col-span-2">
+                            <label
+                              for="name"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Name</label
+                            >
+                            <input
+                              type="name"
+                              name="name"
+                              id="name"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter full name"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="email"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your email"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="phone"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="tel"
+                              name="phone"
+                              id="phone"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your phone number"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="gender"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Gender</label
+                            >
+                            <div class="flex items-center space-x-2">
+                              <div
+                                class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
+                                <label for="male" class="text-text">Male</label>
 
-                              <input
-                                type="checkbox"
-                                name="male"
-                                id="male"
-                                class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
-                                placeholder="What do you do?"
-                                required="" />
-                            </div>
-                            <div
-                              class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
-                              <label for="female" class="text-text"
-                                >Female</label
-                              >
+                                <input
+                                  type="checkbox"
+                                  name="male"
+                                  id="male"
+                                  class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
+                                  placeholder="What do you do?"
+                                  required="" />
+                              </div>
+                              <div
+                                class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
+                                <label for="female" class="text-text"
+                                  >Female</label
+                                >
 
-                              <input
-                                type="checkbox"
-                                name="female"
-                                id="female"
-                                class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
-                                placeholder="What do you do?"
-                                required="" />
+                                <input
+                                  type="checkbox"
+                                  name="female"
+                                  id="female"
+                                  class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
+                                  placeholder="What do you do?"
+                                  required="" />
+                              </div>
                             </div>
                           </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="occupation"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Occupation</label
+                            >
+                            <input
+                              type="text"
+                              name="occupation"
+                              id="occupation"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="What do you do?"
+                              required="" />
+                          </div>
+                          <div class="col-span-2">
+                            <label
+                              for="address"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Home Address</label
+                            >
+                            <input
+                              type="text"
+                              name="address"
+                              id="address"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your home address"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="country"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Country</label
+                            >
+                            <select
+                              id="country"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select country
+                              </option>
+                              <option value="NGN">Nigeria</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="province"
+                              class="block mb-2 text-base font-medium text-text"
+                              >State/Province</label
+                            >
+                            <select
+                              id="province"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select state/province
+                              </option>
+                              <option value="NGN">Texas</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="town"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Town/City</label
+                            >
+                            <select
+                              id="town"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select state/province
+                              </option>
+                              <option value="NGN">Texas</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="occupation"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Occupation</label
-                          >
-                          <input
-                            type="text"
-                            name="occupation"
-                            id="occupation"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="What do you do?"
-                            required="" />
-                        </div>
-                        <div class="col-span-2">
-                          <label
-                            for="address"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Home Address</label
-                          >
-                          <input
-                            type="text"
-                            name="address"
-                            id="address"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your home address"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="country"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Country</label
-                          >
-                          <select
-                            id="country"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select country
-                            </option>
-                            <option value="NGN">Nigeria</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="province"
-                            class="block mb-2 text-base font-medium text-text"
-                            >State/Province</label
-                          >
-                          <select
-                            id="province"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select state/province
-                            </option>
-                            <option value="NGN">Texas</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="town"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Town/City</label
-                          >
-                          <select
-                            id="town"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select state/province
-                            </option>
-                            <option value="NGN">Texas</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                      </div>
 
-                      <!-- Modal Footer -->
-                      <div
-                        class="flex items-center justify-between py-8 border-t rounded-0 border-gray-200 w-full">
+                        <!-- Modal Footer -->
                         <div
-                          class="flex items-center mobilemd:gap-8 gap-4 w-full justify-between mobilemd:flex-nowrap flex-wrap">
-                          <button
-                            type="submit"
-                            class="primary-button mobilemd:w-2/5 w-9/12">
-                            <a
-                              href="#"
-                              role="button"
-                              class=""
-                              aria-label="Register">
-                              Register
-                            </a>
-                          </button>
+                          class="flex items-center justify-between py-8 border-t rounded-0 border-gray-200 w-full">
+                          <div
+                            class="flex items-center mobilemd:gap-8 gap-4 w-full justify-between mobilemd:flex-nowrap flex-wrap">
+                            <button
+                              type="submit"
+                              class="primary-button mobilemd:w-2/5 w-9/12">
+                              <a
+                                href="#"
+                                role="button"
+                                class=""
+                                aria-label="Register">
+                                Register
+                              </a>
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="hidden"
-              id="settings"
-              role="tabpanel"
-              aria-labelledby="settings-tab">
-              <div
-                class="flex md:justify-between justify-evenly items-center w-full tabletmd:flex-nowrap flex-wrap tabletmd:h-[40rem]">
+              <div id="tab3" class="tab-panel hidden">
                 <div
-                  class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex">
-                  <img
-                    src="/assets/images/form-img.png"
-                    alt=""
-                    class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover" />
+                  class="flex md:justify-between justify-evenly items-center w-full tabletmd:flex-nowrap flex-wrap tabletmd:h-[40rem]">
                   <div
-                    class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
-                </div>
-                <div class="tabletmd:w-7/12 w-full h-full">
-                  <!-- Modal content -->
-                  <div
-                    class="relative bg-white shadow-sm tabletmd:rounded-r-sm rounded-b-sm">
-                    <!-- Modal header -->
+                    class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex">
+                    <img
+                      src="/assets/images/form-img.png"
+                      alt=""
+                      class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover" />
                     <div
-                      class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
-                      <div>
-                        <h3
-                          class="mobilemd:text-2xl text-xl font-secondary font-semibold text-blue">
-                          Together we can change lives
-                        </h3>
-                        <p class="text-lg text-gray-400">
-                          Please fill the form below
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Modal body -->
-                    <form class="p-4 md:p-5">
+                      class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
+                  </div>
+                  <div class="tabletmd:w-7/12 w-full h-full">
+                    <!-- Modal content -->
+                    <div
+                      class="relative bg-white shadow-sm tabletmd:rounded-r-sm rounded-b-sm">
+                      <!-- Modal header -->
                       <div
-                        class="grid gap-4 mb-4 grid-cols-2 xl:max-h-[373px] max-h-[373px] pe-2 overflow-y-scroll">
-                        <div class="col-span-2">
-                          <label
-                            for="name"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Name</label
-                          >
-                          <input
-                            type="name"
-                            name="name"
-                            id="name"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter full name"
-                            required="" />
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                        <div>
+                          <h3
+                            class="mobilemd:text-2xl text-xl font-secondary font-semibold text-blue">
+                            Together we can change lives
+                          </h3>
+                          <p class="text-lg text-gray-400">
+                            Please fill the form below
+                          </p>
                         </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="email"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your email"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="phone"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Phone Number</label
-                          >
-                          <input
-                            type="tel"
-                            name="phone"
-                            id="phone"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your phone number"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="gender"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Gender</label
-                          >
-                          <div class="flex items-center space-x-2">
-                            <div
-                              class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
-                              <label for="male" class="text-text">Male</label>
+                      </div>
+                      <!-- Modal body -->
+                      <form class="p-4 md:p-5">
+                        <div
+                          class="grid gap-4 mb-4 grid-cols-2 xl:max-h-[373px] max-h-[373px] pe-2 overflow-y-scroll">
+                          <div class="col-span-2">
+                            <label
+                              for="name"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Name</label
+                            >
+                            <input
+                              type="name"
+                              name="name"
+                              id="name"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter full name"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="email"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your email"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="phone"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="tel"
+                              name="phone"
+                              id="phone"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your phone number"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="gender"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Gender</label
+                            >
+                            <div class="flex items-center space-x-2">
+                              <div
+                                class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
+                                <label for="male" class="text-text">Male</label>
 
-                              <input
-                                type="checkbox"
-                                name="male"
-                                id="male"
-                                class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
-                                placeholder="What do you do?"
-                                required="" />
-                            </div>
-                            <div
-                              class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
-                              <label for="female" class="text-text"
-                                >Female</label
-                              >
+                                <input
+                                  type="checkbox"
+                                  name="male"
+                                  id="male"
+                                  class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
+                                  placeholder="What do you do?"
+                                  required="" />
+                              </div>
+                              <div
+                                class="ring-1 ring-gray-300 rounded w-fit flex items-center justify-between tabletlg:space-x-4 space-x-2 h-10 px-2">
+                                <label for="female" class="text-text"
+                                  >Female</label
+                                >
 
-                              <input
-                                type="checkbox"
-                                name="female"
-                                id="female"
-                                class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
-                                placeholder="What do you do?"
-                                required="" />
+                                <input
+                                  type="checkbox"
+                                  name="female"
+                                  id="female"
+                                  class="bg-gray-50 border border-gray-300 text-purple text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block"
+                                  placeholder="What do you do?"
+                                  required="" />
+                              </div>
                             </div>
                           </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="occupation"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Occupation</label
+                            >
+                            <input
+                              type="text"
+                              name="occupation"
+                              id="occupation"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="What do you do?"
+                              required="" />
+                          </div>
+                          <div class="col-span-2">
+                            <label
+                              for="address"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Home Address</label
+                            >
+                            <input
+                              type="text"
+                              name="address"
+                              id="address"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                              placeholder="Enter your home address"
+                              required="" />
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="country"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Country</label
+                            >
+                            <select
+                              id="country"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select country
+                              </option>
+                              <option value="NGN">Nigeria</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="province"
+                              class="block mb-2 text-base font-medium text-text"
+                              >State/Province</label
+                            >
+                            <select
+                              id="province"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select state/province
+                              </option>
+                              <option value="NGN">Texas</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
+                          <div class="col-span-2 sm:col-span-1">
+                            <label
+                              for="town"
+                              class="block mb-2 text-base font-medium text-text"
+                              >Town/City</label
+                            >
+                            <select
+                              id="town"
+                              class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                              <option selected="true" disabled>
+                                Select state/province
+                              </option>
+                              <option value="NGN">Texas</option>
+                              <option value="US">
+                                United States of America
+                              </option>
+                              <option value="UK">United Kingdom</option>
+                              <option value="SW">Switzerland</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="occupation"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Occupation</label
-                          >
-                          <input
-                            type="text"
-                            name="occupation"
-                            id="occupation"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="What do you do?"
-                            required="" />
-                        </div>
-                        <div class="col-span-2">
-                          <label
-                            for="address"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Home Address</label
-                          >
-                          <input
-                            type="text"
-                            name="address"
-                            id="address"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                            placeholder="Enter your home address"
-                            required="" />
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="country"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Country</label
-                          >
-                          <select
-                            id="country"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select country
-                            </option>
-                            <option value="NGN">Nigeria</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="province"
-                            class="block mb-2 text-base font-medium text-text"
-                            >State/Province</label
-                          >
-                          <select
-                            id="province"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select state/province
-                            </option>
-                            <option value="NGN">Texas</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                        <div class="col-span-2 sm:col-span-1">
-                          <label
-                            for="town"
-                            class="block mb-2 text-base font-medium text-text"
-                            >Town/City</label
-                          >
-                          <select
-                            id="town"
-                            class="bg-gray-50 border border-gray-300 text-text text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="true" disabled>
-                              Select state/province
-                            </option>
-                            <option value="NGN">Texas</option>
-                            <option value="US">United States of America</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="SW">Switzerland</option>
-                          </select>
-                        </div>
-                      </div>
 
-                      <!-- Modal Footer -->
-                      <div
-                        class="flex items-center justify-between py-8 border-t rounded-0 border-gray-200 w-full">
+                        <!-- Modal Footer -->
                         <div
-                          class="flex items-center mobilemd:gap-8 gap-4 w-full justify-between mobilemd:flex-nowrap flex-wrap">
-                          <button
-                            type="submit"
-                            class="primary-button mobilemd:w-2/5 w-9/12">
-                            <a
-                              href="#"
-                              role="button"
-                              class=""
-                              aria-label="Register">
-                              Register
-                            </a>
-                          </button>
+                          class="flex items-center justify-between py-8 border-t rounded-0 border-gray-200 w-full">
+                          <div
+                            class="flex items-center mobilemd:gap-8 gap-4 w-full justify-between mobilemd:flex-nowrap flex-wrap">
+                            <button
+                              type="submit"
+                              class="primary-button mobilemd:w-2/5 w-9/12">
+                              <a
+                                href="#"
+                                role="button"
+                                class=""
+                                aria-label="Register">
+                                Register
+                              </a>
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>

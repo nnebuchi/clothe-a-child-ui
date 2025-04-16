@@ -143,6 +143,24 @@ menu {
   animation: circle-exit 0.5s forwards;
 }
 
+.tab-btn.active {
+  /* Active text color: change this as needed */
+  color: var(--color-blue); /* Tailwind blue-700 */
+  position: relative;
+  opacity: 1;
+}
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Adjust distance from text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%; /* 1/3 of the button width */
+  height: 3px; /* Underline thickness */
+  background-color: var(--color-blue); /* Underline color (blue) */
+  border-radius: 2px;
+}
+
 .swiper {
   width: 90%;
   padding-block: 40px !important;
@@ -264,9 +282,12 @@ menu {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
+.donation-card:hover {
+  background-image: url("../assets/images/donate/donation-hover.png");
+}
 
 .quote {
-  background-image: url("../assets/images/quote-bg.png");
+  /* background-image: url("../assets/images/quote-bg.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -276,8 +297,15 @@ menu {
 }
 
 .form-abstract {
-  background-image: url("/assets/images/form-abstract.png");
+  background-image: url("../assets/images/form-abstract.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#getInvolved,
+#theTeam {
+  background-image: url("../assets/images/about-bg.png");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }

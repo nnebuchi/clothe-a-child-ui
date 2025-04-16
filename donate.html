@@ -349,7 +349,7 @@
       <section
         id="donationSection"
         aria-labelledby="donationSection-title"
-        class="lg:px-20 tabletlg:px-16 mobilesm:px-8 px-4">
+        class="lg:px-20 tabletlg:px-16 mobilemd:px-8 px-4">
         <h2 id="donationSection-title" class="sr-only">Donation Section</h2>
 
         <section
@@ -376,358 +376,313 @@
 
         <section aria-labelledby="donation" class="py-8" id="donation">
           <div class="rounded-xl bg-[#F9E8F699] md:p-10 p-6 mx-auto">
-            <div class="md:mb-24 mb-12">
-              <ul
-                class="flex flex-wrap -mb-px text-sm font-medium text-center lg:justify-start md:justify-evenly justify-between"
-                id="default-tab"
-                data-tabs-toggle="#default-tab-content"
-                role="tablist">
-                <li class="me-2" role="presentation">
-                  <button
-                    class="inline-block mobilemd:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                    id="profile-tab"
-                    data-tabs-target="#profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="profile"
-                    aria-selected="false">
-                    one-time
-                  </button>
-                </li>
-                <li class="me-2" role="presentation">
-                  <button
-                    class="inline-block mobilemd:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                    id="dashboard-tab"
-                    data-tabs-target="#dashboard"
-                    type="button"
-                    role="tab"
-                    aria-controls="dashboard"
-                    aria-selected="false">
-                    Monthly
-                  </button>
-                </li>
-                <li class="me-2" role="presentation">
-                  <button
-                    class="inline-block mobilemd:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                    id="settings-tab"
-                    data-tabs-target="#settings"
-                    type="button"
-                    role="tab"
-                    aria-controls="settings"
-                    aria-selected="false">
-                    Quarterly
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="inline-block mobilemd:p-4 p-0 border-b-2 border-blue text-blue md:text-2xl mobilelg:text-xl text-sm capitalize font-secondary font-bold hover:border-text-[#0D000B80]"
-                    id="contacts-tab"
-                    data-tabs-target="#contacts"
-                    type="button"
-                    role="tab"
-                    aria-controls="contacts"
-                    aria-selected="false">
-                    Annually
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div id="default-tab-content">
-              <div
-                class="hidden"
-                id="profile"
-                role="tabpanel"
-                aria-labelledby="profile-tab">
-                <div
-                  class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+            <div id="myTabs" class="max-w-6xl mx-auto">
+              <!-- Tab Buttons -->
+              <div class="flex mobilelg:flex-nowrap flex-wrap gap-0">
+                <button
+                  class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                  data-tab="tab1">
+                  One-Time
+                </button>
+                <button
+                  class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                  data-tab="tab2">
+                  Monthly
+                </button>
+                <button
+                  class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                  data-tab="tab3">
+                  Quarterly
+                </button>
+                <button
+                  class="tab-btn py-2 mobilemd:px-4 px-2 text-text opacity-70 hover:text-blue-600 focus:outline-none transition-colors duration-200 font-secondary mobilemd:text-xl text-sm font-bold"
+                  data-tab="tab4">
+                  Annually
+                </button>
+              </div>
+              <!-- Tab Contents -->
+              <div class="tab-content mt-12">
+                <!-- Each panel is hidden by default except the active one -->
+                <div id="tab1" class="tab-panel">
                   <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="hidden"
-                id="dashboard"
-                role="tabpanel"
-                aria-labelledby="dashboard-tab">
-                <div
-                  class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                <div id="tab2" class="tab-panel hidden">
                   <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="hidden"
-                id="settings"
-                role="tabpanel"
-                aria-labelledby="settings-tab">
-                <div
-                  class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                <div id="tab3" class="tab-panel hidden">
                   <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="hidden"
-                id="contacts"
-                role="tabpanel"
-                aria-labelledby="contacts-tab">
-                <div
-                  class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                <div id="tab4" class="tab-panel hidden">
                   <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    class="flex md:justify-between justify-evenly gap-y-8 items-center w-full gap-2 md:flex-nowrap flex-wrap">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group hover:bg-blue h-52 gap-4 p-4">
-                    <span
-                      class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
-                      >Bronze</span
-                    >
-                    <h3 class="heading-1 text-text group-hover:text-white">
-                      $25
-                    </h3>
-                    <div class="justify-start items-center w-full flex h-1/3">
+                    <div
+                      class="rounded-xl flex justify-between flex-col items-center md:w-[32%] mobilemd:w-5/12 w-full donation-card cursor-pointer transition-all ease-linear 500 group h-52 gap-4 p-4">
                       <span
-                        class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
-                        You're spreading so much good
-                      </span>
-                      <div
-                        class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
-                        <hr class="border-1 border-white w-full" />
+                        class="text-base font-secondary text-white group-hover:text-blue font-bold bg-blue rounded-sm px-4 text-center py-2 self-end group-hover:bg-white"
+                        >Bronze</span
+                      >
+                      <h3 class="heading-1 text-text group-hover:text-white">
+                        $25
+                      </h3>
+                      <div class="justify-start items-center w-full flex h-1/3">
                         <span
-                          class="fa fa-circle text-[0.5rem] text-white"></span>
+                          class="text-sm text-white font-primary w-6/12 group-hover:block hidden">
+                          You're spreading so much good
+                        </span>
+                        <div
+                          class="mobilemd:w-6/12 items-center w-10/12 group-hover:flex hidden">
+                          <hr class="border-1 border-white w-full" />
+                          <span
+                            class="fa fa-circle text-[0.5rem] text-white"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -778,7 +733,7 @@
         id="quoteSection">
         <h2 id="quoteSection-title" class="sr-only">Get Involved</h2>
         <div
-          class="tabletlg:p-12 space-y-4 lg:w-6/12 tabletlg:w-7/12 mobilelg:w-9/12 w-10/12 mobilesm:p-8 p-4 rounded-3xl mx-auto min-h-52 quote flex-col flex items-center">
+          class="tabletlg:p-12 space-y-4 lg:w-6/12 tabletlg:w-7/12 mobilelg:w-9/12 w-10/12 mobilemd:p-8 p-4 rounded-3xl mx-auto min-h-52 quote flex-col flex items-center">
           <img src="./assets/icons/birds.svg" alt="" class="w-12" />
           <p
             class="text-white font-secondary text-center mobilesm:text-xl text-base font-semibold">
@@ -794,7 +749,7 @@
         id="support">
         <h2 id="support" class="sr-only">Support Us</h2>
         <div
-          class="flex justify-between items-center lg:px-20 tabletlg:px-16 mobilesm:px-8 px-4 md:min-h-[400px] min-h-[280px] tabletlg:gap-8 gap-4">
+          class="flex justify-between items-center lg:px-20 tabletlg:px-16 mobilemd:px-8 px-4 md:min-h-[400px] min-h-[280px] tabletlg:gap-8 gap-4">
           <div
             class="tabletlg:w-4/12 mobilelg:w-5/12 w-7/12 h-[34rem] self-end md:block hidden"
             role="img">
@@ -827,7 +782,7 @@
               </p>
             </article>
             <h1
-              class="heading-1 mobilemd:text-4xl text-3xl my-4 text-white w-full">
+              class="heading-1 mobilemd:text-4xl text-xl my-4 text-white w-full">
               Project Clothe A Child is a 501(c)(3) organization. Donations are
               tax-deductible.
             </h1>
@@ -835,7 +790,7 @@
               href="/assets/determination_letter.pdf"
               target="_blank"
               aria-label="see our 501c3 letter"
-              class="text-white mobilemd:text-lg text-xl font-secondary">
+              class="text-white mobilemd:text-lg text-base font-secondary">
               CLICK THIS LINK TO SEE OUR 501c3 letter>>>
               <span class="opacity-75"> ​IRS 501C DETERMINATION LETTER </span>
             </a>
