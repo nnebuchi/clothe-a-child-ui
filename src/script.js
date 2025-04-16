@@ -8,22 +8,52 @@ document.addEventListener("DOMContentLoaded", function () {
     const heroMidpoint = hero.offsetWidth / 2;
 
     navLinks.forEach((link) => {
+      const underline = link.querySelector(".underline-indicator");
       const linkRect = link.getBoundingClientRect();
       const linkCenter = linkRect.left + linkRect.width / 2;
       const isOnBlueSide = linkCenter > heroMidpoint;
 
+      // Remove existing active styling first
+      link.classList.remove("nav-active");
+
+      // Check if this is the current page
+      const isCurrentPage =
+        window.location.pathname === new URL(link.href).pathname;
+
       if (isOnBlueSide) {
-        // Right side (Blue background)
-        link.style.color = "white"; // Default white
-        link.onmouseenter = () => (link.style.color = "black"); // Hover/Active black
-        link.onmouseleave = () => (link.style.color = "white");
-        link.onfocus = () => (link.style.color = "black"); // Keyboard navigation support
+        // Blue background
+        link.style.color = isCurrentPage ? "white" : "white";
+        underline.classList.remove("bg-blue");
+        underline.classList.add("bg-white");
+
+        link.onmouseenter = () => (link.style.color = "white");
+        link.onmouseleave = () =>
+          (link.style.color = isCurrentPage ? "white" : "white");
+        link.onfocus = () => (link.style.color = "white");
+
+        if (isCurrentPage) {
+          link.classList.add("nav-active");
+          underline.classList.add("scale-x-100");
+        }
       } else {
-        // Left side (White background)
-        link.style.color = "var(--color-text)"; // Default black
-        link.onmouseenter = () => (link.style.color = "var(--color-blue)"); // Hover/Active blue
-        link.onmouseleave = () => (link.style.color = "var(--color-text)");
+        // White background
+        link.style.color = isCurrentPage
+          ? "var(--color-blue)"
+          : "var(--color-text)";
+        underline.classList.remove("bg-white");
+        underline.classList.add("bg-blue");
+
+        link.onmouseenter = () => (link.style.color = "var(--color-blue)");
+        link.onmouseleave = () =>
+          (link.style.color = isCurrentPage
+            ? "var(--color-blue)"
+            : "var(--color-text)");
         link.onfocus = () => (link.style.color = "var(--color-blue)");
+
+        if (isCurrentPage) {
+          link.classList.add("nav-active");
+          underline.classList.add("scale-x-100");
+        }
       }
     });
   }
