@@ -62,18 +62,18 @@
 }
 
 .card-btn {
-  @apply lg:w-7/12 w-9/12 flex justify-center items-center mt-8 px-6 py-3 border-2 border-white text-[var(--color-blue)] hover:bg-transparent hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-primary font-bold text-center   bg-white h-12 mobilexs:text-lg text-sm;
+  @apply lg:w-7/12 w-9/12 flex justify-center items-center mt-8 px-6 py-3 border-2 border-white text-[var(--color-blue)] hover:bg-transparent hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-primary font-bold text-center   bg-white h-12 mobilesm:text-lg text-sm;
 }
 
 .cta-btn {
-  @apply px-6 py-3 ring-1 ring-white hover:ring-0 text-white hover:bg-[var(--color-purple)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 min-w-36 text-center mobilexs:text-lg text-sm flex items-center justify-center;
+  @apply px-6 py-3 ring-1 ring-white hover:ring-0 text-white hover:bg-[var(--color-purple)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 min-w-36 text-center mobilesm:text-lg text-sm flex items-center justify-center;
 }
 
 .primary-button {
-  @apply px-6 py-3 text-white bg-[var(--color-blue)] hover:bg-[var(--color-purple)] transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary h-12 text-center mobilexs:text-lg text-sm flex items-center justify-center;
+  @apply px-6 py-3 text-white bg-[var(--color-blue)] hover:bg-[var(--color-purple)] transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary h-12 text-center mobilesm:text-lg text-sm flex items-center justify-center;
 }
 .ghost-button {
-  @apply px-6 py-3 border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-[var(--color-blue)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 text-center flex items-center justify-center mobilexs:text-lg text-sm;
+  @apply px-6 py-3 border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-[var(--color-blue)] hover:text-white transition focus:ring-4 focus:ring-gray-800 focus:outline-none font-secondary  h-12 text-center flex items-center justify-center mobilesm:text-lg text-sm;
 }
 
 @tailwind utilities;
