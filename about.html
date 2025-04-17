@@ -15,6 +15,9 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.js" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script defer src="./src/script.js"></script>
   </head>
@@ -204,8 +207,11 @@
         <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
           <!-- Left Side -->
           <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800"
             id="heroLeft"
-            class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-36 pt-36 pb-8">
+            class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-32 sm:pt-36 pt-36 pb-8">
             <h1 id="hero-title" class="heading-1">
               Where Every Child’s Story Begins with Hope
             </h1>
@@ -266,7 +272,11 @@
           <div
             id="heroRight"
             class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
-            <div class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
+            <div
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+              class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
               <img
                 src="/assets/images/about-hero.png"
                 alt=""
@@ -282,7 +292,10 @@
 
         <!-- Achievement Cards Container -->
         <div
-          class="flex justify-center items-center mobilelg:min-h-[200px] py-8 mx-auto">
+          class="flex justify-center items-center mobilelg:min-h-[200px] py-8 mx-auto"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="800">
           <p
             class="text-white heading-1 tabletmd:w-8/12 w-11/12 mx-auto text-center">
             “Our goal is to impact as many disadvantaged children as possible”
@@ -301,7 +314,11 @@
           class="mx-auto xl:px-16 lg:px-4 md:px-4 sm:px-4 px-0 w-full py-16 flex items-center flex-col gap-16"
           aria-labelledby="getInvolved"
           id="getInvolved">
-          <div class="xl:w-10/12 tabletlg:w-11/12 w-full">
+          <div
+            class="xl:w-10/12 tabletlg:w-11/12 w-full"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3
               id="activities-title"
               class="text-xl font-bold leading-tight text-[var(--color-purple)]">
@@ -314,10 +331,16 @@
             <div
               class="tabletmd:w-5/12 w-full tabletmd:h-full h-56 tabletmd:block flex">
               <img
+                data-aos="fade-down"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800"
                 src="/assets/images/mission.png"
                 alt=""
                 class="tabletmd:w-full w-8/12 tabletmd:h-[70%] h-full object-cover" />
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="1200"
                 class="tabletmd:h-[30%] h-full tabletmd:w-full w-4/12 bg-purple form-abstract"></div>
             </div>
             <div
@@ -335,7 +358,11 @@
                     <small class="text-blue text-sm"
                       >Project clothe a child</small
                     >
-                    <span class="w-5/12 h-1 bg-blue"></span>
+                    <span
+                      data-aos="fade-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-duration="800"
+                      class="w-5/12 h-1 bg-blue"></span>
                   </div>
                 </div>
                 <div
@@ -353,7 +380,11 @@
                     <small class="text-purple text-sm"
                       >Project clothe a child</small
                     >
-                    <span class="w-5/12 h-1 bg-purple"></span>
+                    <span
+                      data-aos="fade-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-duration="800"
+                      class="w-5/12 h-1 bg-purple"></span>
                   </div>
                 </div>
               </div>
@@ -364,7 +395,11 @@
       <section
         class="xl:px-36 sm:px-12 mobilemd:px-8 px-4 mx-auto min-h-64 sm:py-16 py-8 flex items-center"
         id="founderQuote">
-        <article class="xl:w-10/12 tabletlg:w-11/12 w-full mx-auto space-y-8">
+        <article
+          class="xl:w-10/12 tabletlg:w-11/12 w-full mx-auto space-y-8"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="800">
           <p class="text-white font-secondary text-3xl">
             "No matter how small or big, we can make a difference in this world.
             I want to leave a legacy that teaches my children that they have
@@ -395,7 +430,11 @@
           class="mx-auto xl:px-20 sm:px-4 px-0 w-full py-16 flex items-center flex-col gap-16"
           aria-labelledby="the-team"
           id="theTeam">
-          <div class="tabletlg:w-9/12 w-full">
+          <div
+            class="tabletlg:w-9/12 w-full"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3
               id="activities-title"
               class="text-xl font-bold leading-tight text-[var(--color-purple)]">
@@ -409,6 +448,9 @@
           <div
             class="flex-wrap flex mobilelg:justify-between justify-center tabletlg:w-9/12 w-full mx-auto md:gap-0 gap-2">
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
               class="md:w-5/12 mobilelg:w-[47%] mobilemd:w-10/12 w-full h-[29rem] space-y-4 cursor-pointer hover:drop-shadow-lg transition-all ease-in-out duration-500">
               <div class="h-[80%] rounded-md p-4 bg-white">
                 <img
@@ -426,6 +468,9 @@
               </article>
             </div>
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
               class="md:w-5/12 mobilelg:w-[47%] mobilemd:w-10/12 w-full h-[29rem] space-y-4 cursor-pointer hover:drop-shadow-lg transition-all ease-in-out duration-500">
               <div class="h-[80%] rounded-md p-4 bg-white">
                 <img
@@ -443,6 +488,9 @@
               </article>
             </div>
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
               class="md:w-5/12 mobilelg:w-[47%] mobilemd:w-10/12 w-full h-[29rem] space-y-4 cursor-pointer hover:drop-shadow-lg transition-all ease-in-out duration-500">
               <div class="h-[80%] rounded-md p-4 bg-white">
                 <img
@@ -458,6 +506,9 @@
               </article>
             </div>
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
               class="md:w-5/12 mobilelg:w-[47%] mobilemd:w-10/12 w-full h-[29rem] space-y-4 cursor-pointer hover:drop-shadow-lg transition-all ease-in-out duration-500">
               <div class="h-[80%] rounded-md p-4 bg-white">
                 <img
@@ -543,5 +594,8 @@
         </div>
       </section>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

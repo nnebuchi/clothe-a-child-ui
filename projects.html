@@ -15,7 +15,9 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.js" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./src/script.js"></script>
   </head>
   <body class="bg-gray-100">
@@ -204,6 +206,9 @@
         <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
           <!-- Left Side -->
           <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800"
             id="heroLeft"
             class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-36 pt-36 pb-8">
             <h1 id="hero-title" class="heading-1">Turning Hope into Action.</h1>
@@ -263,7 +268,11 @@
           <div
             id="heroRight"
             class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
-            <div class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
+            <div
+              class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600">
               <img
                 src="/assets/images/projects/project-hero.png"
                 alt=""
@@ -279,7 +288,10 @@
 
         <!-- Achievement Cards Container -->
         <div
-          class="flex justify-center items-center min-h-[200px] py-8 mx-auto">
+          class="flex justify-center items-center min-h-[200px] py-8 mx-auto"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="800">
           <p class="text-white heading-1 w-8/12 mx-auto text-center">
             “Our goal is to impact as many disadvantaged children as possible”
           </p>
@@ -297,7 +309,13 @@
           class="mx-auto xl:px-16 lg:px-4 md:px-4 sm:px-4 px-0 w-full mt-10 flex items-center flex-col gap-8"
           aria-labelledby="projectEducate"
           id="projectEducate">
-          <div class="xl:w-10/12 tabletlg:w-11/12 w-full">
+          <div
+            class="xl:w-10/12 tabletlg:w-11/12 w-full"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3
               id="activities-title"
               class="text-xl font-bold leading-tight text-[var(--color-purple)]">
@@ -311,14 +329,25 @@
           </div>
           <div
             class="flex tabletmd:justify-between justify-center items-center mt-8 mb-8 xl:gap-12 gap-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              class="tabletmd:w-6/12 w-full"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT EDUCATE
@@ -340,14 +369,26 @@
           </div>
           <div
             class="flex tabbletmd:justify-between justify-center items-center flex-row-reverse xl:gap-12 gap-8 mb-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              class="tabletmd:w-6/12 w-full"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="space-y-4">
+              <article
+                class="space-y-4"
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT IMPACT
@@ -386,14 +427,26 @@
           </div>
           <div
             class="flex tabletmd:justify-between justify-center items-center mb-8 xl:gap-12 gap-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              class="tabletmd:w-6/12 w-full"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT SMILE
@@ -415,14 +468,26 @@
           </div>
           <div
             class="flex tabbletmd:justify-between justify-center items-center flex-row-reverse xl:gap-12 gap-8 mb-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
+              class="tabletmd:w-6/12 w-full">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT MISSIONS
@@ -446,14 +511,26 @@
           </div>
           <div
             class="flex tabletmd:justify-between justify-center items-center mb-8 xl:gap-12 gap-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
+              class="tabletmd:w-6/12 w-full">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT SERVE
@@ -475,14 +552,26 @@
           </div>
           <div
             class="flex tabbletmd:justify-between justify-center items-center flex-row-reverse xl:gap-12 gap-8 mb-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
+              class="tabletmd:w-6/12 w-full">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT DONATIONS
@@ -505,14 +594,26 @@
           </div>
           <div
             class="flex tabletmd:justify-between justify-center items-center mb-24 xl:gap-12 gap-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="800"
+              class="tabletmd:w-6/12 w-full">
               <img
                 src="/assets/images/projects/project-educate.png"
                 alt=""
                 class="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT PRAY
@@ -605,5 +706,8 @@
         </div>
       </section>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

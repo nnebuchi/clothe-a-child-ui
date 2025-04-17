@@ -15,7 +15,9 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.js" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="/src/swiper/package/swiper-bundle.min.css" />
     <script defer src="./src/script.js"></script>
   </head>
@@ -205,6 +207,9 @@
         <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
           <!-- Left Side -->
           <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800"
             id="heroLeft"
             class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-32 sm:pt-36 pt-36 pb-8">
             <h1 id="hero-title" class="heading-1">
@@ -265,9 +270,12 @@
           <!-- Right Side -->
           <div
             id="heroRight"
-            relative
             class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
-            <div class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
+            <div
+              class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600">
               <img
                 src="/assets/images/events/event-hero.png"
                 alt=""
@@ -283,7 +291,10 @@
 
         <!-- Achievement Cards Container -->
         <div
-          class="flex justify-center items-center md:min-h-[200px] md:py-8 py-4 mx-auto">
+          class="flex justify-center items-center md:min-h-[200px] md:py-8 py-4 mx-auto"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="800">
           <p class="text-white heading-1 md:w-8/12 w-10/12 mx-auto text-center">
             “Our goal is to impact as many disadvantaged children as possible”
           </p>
@@ -298,7 +309,11 @@
           id="projectSmile">
           <div
             class="flex tabletmd:justify-between justify-center items-center mt-8 mb-8 xl:gap-12 gap-8 tabletmd:flex-nowrap flex-wrap">
-            <div class="tabletmd:w-6/12 w-full">
+            <div
+              class="tabletmd:w-6/12 w-full"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="800">
               <img
                 relative
                 src="/assets/images/events/smile.png"
@@ -307,7 +322,11 @@
                 64ss="w-full h-full" />
             </div>
             <div class="tabletmd:w-6/12 w-full">
-              <article class="tabletlg:space-y-8 space-y-4">
+              <article
+                class="tabletlg:space-y-8 space-y-4"
+                data-aos="fade-zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="800">
                 <h1
                   class="tabletlg:text-4xl text-3xl font-semibold font-secondary text-purple uppercase">
                   PROJECT SMILE 2025
@@ -334,7 +353,11 @@
               class="font-secondary text-3xl font-semibold text-purple mb-8 mobilelg:mt-16 mt-8">
               Upcoming Events
             </h3>
-            <div class="overflow-y-auto max-h-[500px] pe-2 space-y-8">
+            <div
+              class="overflow-y-auto max-h-[500px] pe-2 space-y-8"
+              data-aos="fade-zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="800">
               <div
                 class="flex justify-between md:h-64 min-h-64 mobilemd:flex-nowrap flex-wrap items-center lg:space-x-8 tabletmd:space-x-4 space-x-0">
                 <div
@@ -426,7 +449,13 @@
           class="mx-auto xl:px-16 lg:px-8 md:px-8 sm:px-4 px-4 w-full py-12 flex items-center flex-col gap-8"
           aria-labelledby="projectSmile"
           id="projectSmile">
-          <div class="xl:w-10/12 tabletlg:w-11/12 w-full mobilemd:px-4">
+          <div
+            class="xl:w-10/12 tabletlg:w-11/12 w-full mobilemd:px-4"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3
               id="activities-title"
               class="text-xl font-bold leading-tight text-[var(--color-purple)]">
@@ -441,7 +470,12 @@
           <div
             class="relative w-full xl:max-w-5xl mx-auto"
             role="region"
-            aria-label="Photo Carousel">
+            aria-label="Photo Carousel"
+            data-aos="zoom-in-down"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -799,6 +833,9 @@
         </div>
       </section>
     </footer>
+    <script>
+      AOS.init();
+    </script>
     <script type="module">
       const swiper = new Swiper(".swiper", {
         // Optional parameters

@@ -15,6 +15,9 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.js" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script defer src="./src/script.js"></script>
   </head>
@@ -205,6 +208,9 @@
         <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
           <!-- Left Side -->
           <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800"
             id="heroLeft"
             class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-44 pt-36 pb-12">
             <h1 id="hero-title" class="heading-1">
@@ -273,7 +279,11 @@
           <div
             id="heroRight"
             class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
-            <div class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto">
+            <div
+              class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600">
               <img
                 src="/assets/images/hero-image.png"
                 alt=""
@@ -292,6 +302,11 @@
           class="flex tabletlg:justify-between sm:justify-center mobilelg:justify-between justify-center items-center min-h-[200px] py-8 tabletlg:px-8 px-4 tabletlg:space-x-3 text-white tabletlg:flex-nowrap flex-wrap md:gap-0 mobilelg:gap-4 gap-y-8">
           <!-- Achievement Item 1 -->
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            data-aos-duration="800"
             class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
             <img
               src="/assets/icons/donations.svg"
@@ -303,6 +318,11 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            data-aos-duration="900"
             class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
             <img
               src="/assets/icons/scholarship.svg"
@@ -314,6 +334,11 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            data-aos-duration="1000"
             class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
             <img
               src="/assets/icons/mentored-children.svg"
@@ -325,6 +350,11 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            data-aos-duration="1100"
             class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
             <img
               src="/assets/icons/partners.svg"
@@ -336,6 +366,11 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            data-aos-duration="1200"
             class="flex lg:space-x-2 mobilelg:space-x-1 space-x-2 items-center tabletlg:w-1/5 md:w-4/12 mobilelg:w-5/12 w-10/12">
             <img
               src="/assets/icons/provided.svg"
@@ -359,6 +394,10 @@
         <section class="flex justify-between md:flex-nowrap flex-wrap gap-8">
           <!-- Split Image Visual -->
           <aside
+            data-aos="zoom-out"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-duration="800"
             aria-labelledby="splitImageTitle"
             class="py-16 tabletlg:w-7/12 md:w-6/12 sm:w-9/12 w-full mx-auto">
             <h3 id="splitImageTitle" class="sr-only">
@@ -372,6 +411,11 @@
 
           <!-- About Content -->
           <article
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            data-aos-duration="800"
             class="tabletlg:w-5/12 md:w-6/12 sm:w-10/12 w-full flex flex-col justify-center items-start text-[var(--color-text)] gap-3">
             <div>
               <h3
@@ -411,7 +455,12 @@
         <section
           class="mx-auto lg:px-32 md:px-16 sm:px-4 px-0 w-full mt-10"
           aria-labelledby="activities-title">
-          <div class="lg:w-10/12 tabletlg:w-11/12 w-full">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800"
+            class="lg:w-10/12 tabletlg:w-11/12 w-full">
             <h3
               id="activities-title"
               class="text-xl font-bold leading-tight text-[var(--color-purple)]">
@@ -427,7 +476,11 @@
         <section
           aria-labelledby="touching-lives-title"
           class="md:py-20 py-12 flex lg:justify-evenly tabletmd:justify-between justify-center tabletmd:gap-0 sm:gap-8 mobilelg:gap-4 gap-8 tabletmd:flex-nowrap flex-wrap">
-          <div class="card">
+          <div
+            class="card"
+            data-aos="zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3 class="card-title">Touching Lives</h3>
 
             <p class="card-text">
@@ -436,7 +489,11 @@
             </p>
             <a href="#" role="button" class="card-btn"> Learn More </a>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3 class="card-title">Making A Difference</h3>
 
             <p class="card-text">
@@ -445,7 +502,11 @@
             </p>
             <a href="#" role="button" class="card-btn"> Learn More </a>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800">
             <h3 class="card-title">Spreading The Love Of Christ</h3>
 
             <p class="card-text">
@@ -464,6 +525,9 @@
         <div
           class="flex justify-between items-center lg:px-32 tabletlg:px-16 mobilesm:px-8 px-4 md:min-h-[400px] min-h-[280px] tabletlg:gap-0 gap-4">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800"
             class="tabletlg:w-4/12 mobilelg:w-5/12 w-7/12 h-80 self-end md:block hidden"
             role="img">
             <img
@@ -471,7 +535,12 @@
               alt="christmas image"
               class="w-full h-full object-cover" />
           </div>
-          <div class="md:w-7/12 sm:w-10/12 w-full h-full">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="800"
+            class="md:w-7/12 sm:w-10/12 w-full h-full">
             <h1 class="heading-1 text-white lg:w-10/12 w-full">
               Support 'A Christmas Night of Hope' 2025 Annual Fundraiser
               Campaign
@@ -500,7 +569,12 @@
         <h2 id="cta-title" class="sr-only">Get Involved</h2>
         <div
           class="flex justify-between items-center tabletlg:px-16 mobilesm:px-8 px-4 min-h-72 md:flex-nowrap flex-wrap gap-y-8 py-8">
-          <div class="md:w-7/12 mobilelg:w-10/12 w-full">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="bottom-center"
+            class="md:w-7/12 mobilelg:w-10/12 w-full">
             <h1 class="heading-1 text-white 2">
               “Our goal is to impact as many disadvantaged children as possible”
             </h1>
@@ -520,6 +594,9 @@
             </div>
           </div>
           <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
             class="tabletlg:w-4/12 md:w-5/12 w-full md:h-64 h-52 self-end"
             role="img">
             <img
@@ -597,5 +674,8 @@
         </div>
       </section>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
