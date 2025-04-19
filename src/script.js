@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
 
   function updateNavColor() {
-    const heroMidpoint = hero.offsetWidth / 2;
+    const heroMidpoint = hero?.offsetWidth / 2;
 
     navLinks.forEach((link) => {
       const underline = link.querySelector(".underline-indicator");

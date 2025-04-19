@@ -8,6 +8,7 @@ export default {
     "events.html",
     "involved.html",
     "about.html",
+    "transaction-feedback.html",
   ],
   theme: {
     extend: {

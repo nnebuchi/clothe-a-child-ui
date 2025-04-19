@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.js" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script defer src="./src/script.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 p-4">
+      <div
+        class="container mx-auto flex justify-between items-center sm:h-24 h-20">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold" aria-label="Home" role="button">
+          <img
+            src="/assets/icons/brand-logo.svg"
+            alt="Project clothe a child Logo"
+            class="h-10" />
+          <span class="sr-only">Brand Logo</span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav>
+          <ul id="navMenu" class="tabletlg:flex hidden space-x-6">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link relative group"
+                aria-label="Home"
+                >Home
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="nav-link relative group"
+                aria-label="Who we are">
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span>
+                Who we are</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="nav-link relative group"
+                aria-label="Our projects"
+                >Our projects
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="involved.html"
+                class="nav-link relative group"
+                aria-label="Get involved"
+                >Get involved
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="donate.html"
+                class="nav-link relative group"
+                aria-label="Donate"
+                >Donate
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="nav-link relative group"
+                aria-label="Events"
+                >Events
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+              ></a>
+            </li>
+          </ul>
+          <button
+            id="menuBtn"
+            class="menu-btn tabletlg:hidden flex items-center justify-center h-12 w-12 bg-blue sm:ring-0 ring-2 ring-[#fef4fc]"
+            aria-label="Menu">
+            <span class="fa fa-bars text-3xl text-white text"></span>
+          </button>
+
+          <!-- Mobile Menu -->
+          <menu
+            class="hidden bg-gray-100 absolute inset-0 mobilelg:w-[50vw] w-[100vw] h-[100vh] z-50 pt-8 px-10">
+            <button
+              id="closeBtn"
+              class="close-btn right-10 top-10 absolute"
+              aria-label="Close">
+              <span class="fa fa-close text-purple text-3xl"></span>
+            </button>
+
+            <ul id="navMenu" class="flex flex-col justify-evenly h-full">
+              <li>
+                <a
+                  href="index.html"
+                  class="nav-link relative group"
+                  aria-label="Home"
+                  >Home
+                  <span
+                    class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="nav-link relative group"
+                  aria-label="Who we are"
+                  >Who we are
+                  <span
+                    class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="nav-link relative group"
+                  aria-label="Our projects"
+                  >Our projects
+                  <span
+                    class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="involved.html"
+                  class="nav-link relative group"
+                  aria-label="Get involved"
+                  >Get involved
+                  <span
+                    class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="donate.html"
+                  class="nav-link relative group"
+                  aria-label="Donate"
+                  >Donate
+                  <span
+                    class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="events.html"
+                  class="nav-link relative group"
+                  aria-label="Events"
+                  >Events
+                  <span
+                    class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span
+                ></a>
+              </li>
+              <a
+                role="button"
+                href="donate.html"
+                class="primary-button sm:w-6/12 mobilemd:w-8/12 w-8/12"
+                aria-label="Donate Now ">
+                Donate Now
+                <span
+                  class="absolute left-1/2 -bottom-2 w-1/3 h-[3px] -translate-x-1/2 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-center underline-indicator"></span>
+              </a>
+            </ul>
+          </menu>
+        </nav>
+
+        <!-- CTA Button -->
+        <a
+          role="button"
+          href="donate.html"
+          class="cta-btn sm:flex hidden"
+          aria-label="Donate Now ">
+          Donate Now
+        </a>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="" aria-labelledby="hero-title">
+        <div class="flex tabletmd:flex-nowrap flex-wrap w-full bg-[#fef4fc]">
+          <!-- Left Side -->
+          <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            id="heroLeft"
+            class="tabletmd:w-1/2 w-full flex flex-col justify-center items-start bg-[#fef4fc] tabletlg:px-12 mobilelg:px-8 px-4 text-[var(--color-text)] gap-4 lg:pt-28 sm:pt-36 pt-36 pb-8">
+            <h1 id="hero-title" class="heading-1">
+              Be the Reason a Child Smiles Today.
+            </h1>
+            <p
+              class="text-2xl text-text tabletmd:w-full md:w-8/12 mobilelg:w-10/12 w-full">
+              Your donation provides food, clothes, education, and hope for a
+              brighter future. Every gift changes a life—make yours count!
+            </p>
+            <!-- Buttons -->
+            <div class="my-4 flex space-x-2 items-center">
+              <a
+                href="#"
+                role="button"
+                class="primary-button"
+                aria-label="Donate Now">
+                Donate Now
+              </a>
+            </div>
+            <div class="social-media flex space-x-5 items-center">
+              <h2 class="text-lg font-bold">Follow us:</h2>
+              <div class="flex space-x-2 items-center">
+                <a
+                  href="https://facebook.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Facebook">
+                  <img
+                    src="/assets/icons/facebook-icon.svg"
+                    alt="Facebook"
+                    class="w-6 h-6" />
+                </a>
+                <a
+                  href="https://twitter.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on X">
+                  <img
+                    src="/assets/icons/x-icon.svg"
+                    alt="twitter-x"
+                    class="w-6 h-6" />
+                </a>
+                <a
+                  href="https://instagram.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow us on Instagram">
+                  <img
+                    src="/assets/icons/instagram-icon.svg"
+                    alt="Instagram"
+                    class="w-6 h-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div
+            id="heroRight"
+            class="tabletmd:w-1/2 w-full flex items-end justify-center bg-[var(--color-blue)] text-white">
+            <div
+              class="tabletmd:w-11/12 md:h-[80%] h-[90%] me-auto"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600">
+              <img
+                src="/assets/images/donate/donate-hero.png"
+                alt=""
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="xl:px-52 lg:px-48 tabletmd:px-24 mobilelg:px-16 bg-white mobilelg:py-16 p-4"
+        id="transaction-feedback"
+        aria-labelledby="">
+        <div
+          class="flex flex-col items-center justify-center bg-[#fef4fc] mobilelg:p-8 p-4 space-y-4 text-center rounded-lg drop-shadow-md">
+          <div
+            class="mobilelg:h-16 mobilelg:w-16 h-12 w-12 rounded-full bg-green-700 flex justify-center items-center p-2 animate-pulse">
+            <div
+              class="bg-green-600 h-full w-full rounded-full p-1 flex justify-center items-center">
+              <span
+                class="fa fa-check mobilelg:text-4xl text-3xl text-white"></span>
+            </div>
+          </div>
+          <h2 class="text-green-700 text-3xl font-bold">Successful!!</h2>
+          <h2
+            class="mobilelg:text-3xl text-xl font-bold text-blue font-secondary mb-4"
+            id="transaction-feedback-title">
+            Thank You for Your Generosity!
+          </h2>
+          <p
+            class="mobilelg:text-lg text-base text-text font-secondary mb-6 tabletmd:w-8/12 w-full">
+            Your donation has been successfully processed. We appreciate your
+            support in making a difference in the lives of children in need.
+          </p>
+          <a
+            href="index.html"
+            role="button"
+            class="primary-button"
+            aria-label="Back to Home">
+            Back to Home
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer bg-purplelight" id="footer" aria-labelledby="">
+        <div
+          class="flex justify-between tabletlg:px-16 mobilelg:px-8 px-4 py-12 lg:flex-nowrap flex-wrap gap-y-8">
+          <div class="lg:w-2/12 tabletsm:w-3/12 mobilelg:w-4/12 w-10/12">
+            <a href="#" aria-label="footer logo"
+              ><img
+                src="/assets/icons/brand-logo.svg"
+                alt="clothe a child logo"
+                class="sm:w-10/12 w-7/12" />
+              <span class="sr-only">footer logo</span>
+            </a>
+            <p class="text-text font-semibold font-secondary text-xl">
+              Changing the world one child at a time!
+            </p>
+          </div>
+          <div
+            class="lg:w-1/12 tabletsm:w-2/12 mobilelg:w-3/12 mobilemd:w-[32%] mobilesm:w-5/12 w-full space-y-3 font-secondary">
+            <h3 class="text-blue font-semibold font-secondary text-xl">Home</h3>
+            <ul class="font-secondary space-y-4 text-blue">
+              <li><a href="#" aria-label="home">Home</a></li>
+              <li><a href="#" aria-label="about us">About us</a></li>
+              <li><a href="#" aria-label="who we are">Who We Are</a></li>
+              <li><a href="#" aria-label="donate">Donate</a></li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-1/12 tabletsm:w-2/12 mobilelg:w-3/12 mobilemd:w-[32%] mobilesm:w-5/12 w-full space-y-4">
+            <h3 class="text-blue font-semibold font-secondary text-xl">More</h3>
+            <ul class="font-secondary space-y-4 text-blue">
+              <li><a href="#" aria-label="home">Our Projects</a></li>
+              <li><a href="#" aria-label="about us">Events</a></li>
+              <li><a href="#" aria-label="who we are">Get Involved</a></li>
+            </ul>
+          </div>
+          <div class="lg:w-1/12 tabletsm:w-2/12 w-4/12 space-y-4">
+            <h3 class="text-blue font-semibold font-secondary text-xl">
+              Social
+            </h3>
+            <ul class="font-secondary space-y-4 text-blue">
+              <li><a href="#" aria-label="home">Facebook</a></li>
+              <li><a href="#" aria-label="about us">Instagram</a></li>
+              <li>
+                <a href="#" aria-label="who we are">X(formerly twitter)</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-3/12 space-y-4 tabletsm:w-6/12 mobilelg:w-8/12 w-10/12">
+            <h1 class="text-blue font-semibold font-secondary text-3xl">
+              Subscribe to get latest updates
+            </h1>
+            <div class="flex w-full items-center">
+              <input
+                type="text"
+                aria-label="subscribe"
+                placeholder="Your email"
+                class="w-7/12 h-12 px-2 text-blue font-secondary text-base ring-1 ring-blue active:outline-none focus:outline-none bg-transparent active:bg-[#fef4fc] focus:bg-[#fef4fc] placeholder:text-blue" />
+              <button
+                class="primary-button w-5/12 text-center h-12 ring-1 ring-blue hover:ring-purple">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
